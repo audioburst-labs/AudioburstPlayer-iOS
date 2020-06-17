@@ -22,7 +22,7 @@ AudioburstPlayer consists of two modes of audio player (compact and fullscreen) 
 
 ## Integration
 
-#### CocoaPods (iOS 8+, OS X 10.9+)
+#### CocoaPods (iOS 12+)
 
 You can use [CocoaPods](http://cocoapods.org/) to install `AudioburstPlayer` by adding it to your `Podfile`:
 
@@ -31,7 +31,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-    pod 'AudioburstPlayer', '~> 1.0'
+    pod 'AudioburstPlayer', '~> 0.1.0'
 end
 ```
 

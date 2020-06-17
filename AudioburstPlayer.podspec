@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Official player from Audioburst'
 
-  s.homepage         = 'https://github.com/aleksanderkobylak/audio-sdk'
+  s.homepage         = 'https://github.com/Gal-Klein/AudioburstPlayer-iOS'
   s.license          = { :type => 'MIT'}
   s.author           = { 'Aleksander kobylak' => 'alex.kobylak@audioburst.com' }
-  s.source           = { :git => 'https://github.com/aleksanderkobylak/audio-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Gal-Klein/AudioburstPlayer-iOS.git', :tag => s.version.to_s }
 
   s.platform = :ios
   s.ios.deployment_target = '12.0'
