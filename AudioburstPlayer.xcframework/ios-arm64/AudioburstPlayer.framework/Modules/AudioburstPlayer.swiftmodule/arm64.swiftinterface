@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AudioburstPlayer
+import AVFoundation
+import Alamofire
+@_exported import AudioburstPlayer
+import Cache
+import CoreGraphics
+import CoreLocation
+import Foundation
+import IBPCollectionViewCompositionalLayout
+import LinkPresentation
+import Lottie
+import MediaPlayer
+import MessageUI
+import OwlKit
+import SDWebImage
+import Speech
+import Swift
+import UIKit.UIFont
+import UIKit.UIImage
+import UIKit
+import UserNotifications
+public class ABPlayer {
+  public init(appKey: Swift.String, experienceId: Swift.String)
+  public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
+  public func onError(completion: @escaping (AudioburstPlayer.AudioburstPlayerError) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable open class LoadableFromXibView : UIKit.UIView {
+  @objc @IBOutlet weak public var view: UIKit.UIView!
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  open func onInit()
+  @objc deinit
+}
+extension CLAuthorizationStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers open class CachingPlayerItem : AVFoundation.AVPlayerItem {
+  @objc deinit
+  open func download()
+  @available(iOS 7.0, *)
+  @objc override dynamic public init(asset: AVFoundation.AVAsset, automaticallyLoadedAssetKeys: [Swift.String]?)
+}
+public enum AudioburstPlayerError : Foundation.LocalizedError {
+  case wrongAppKey
+  case wrongExperienceId
+  case other(Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension AudioburstPlayerError {
+  public static func error(for error: Swift.Error) -> AudioburstPlayer.AudioburstPlayerError
+}
+extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
