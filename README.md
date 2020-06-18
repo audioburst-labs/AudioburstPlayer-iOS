@@ -31,13 +31,13 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-    pod 'AudioburstPlayer', '~> 0.1.0'
+    pod 'AudioburstPlayer', '~> 0.1.2'
 end
 ```
 
 ## Getting started
 
-To start using `AudioburstPlayer`, you need to provide an application key (check [Audioburst Studio site](https://developers.audioburst.com/)) and experienceId that represents customized playlist settings (to obtain one please check [Audioburst Studio site](https://developers.audioburst.com/)).
+To start using `AudioburstPlayer`, you need to provide an application key (check [Audioburst Studio site](https://studio.audioburst.com/)) and experience id that represents customized playlist settings (to obtain one please check [Audioburst Studio site](https://studio.audioburst.com/)).
 
 ## Usage
 
@@ -50,7 +50,7 @@ import AudioburstPlayer
 ```
 
 ```swift
-let player = ABPlayer(appKey: applicationKey, experienceId: experienceId)
+let player = ABPlayer(appKey: "YOUR_APP_KEY", experienceId: "YOUR_EXPERIENCE_ID")
 ```
 
 
@@ -87,4 +87,4 @@ Libraries used by AudioburstPlayer (installed as pods dependencies)
 
 
 ## Demo application
-The demo application is a showcase of the AudioburstPlayer. Example application key and experienceId are provided.
+The demo application is a showcase of the AudioburstPlayer. 
