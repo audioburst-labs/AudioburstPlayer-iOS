@@ -1,0 +1,2892 @@
+{
+    "sections": [
+
+        {
+            "index": 0,
+            "title": "",
+            "showTitle": false,
+            "subtitle": null,
+            "showButton": false,
+            "buttonText": "",
+            "widthRatio": 0.4,
+            "heightRatio": 0.47,
+            "layout": "single",
+            "category": "personal",
+            "items": [{
+                "name": "For You",
+                "DisplayName": "For\nYou",
+                "async": true,
+                "image": {
+                    "url": "",
+                    "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIconsN/tempPersonalImage-run-1.jpg",
+                    "svg": ""
+                },
+                "description": "",
+                "APIcall": "https://sapi.audioburst.com/v2/personal",
+                "active": true,
+                "isIcon": true,
+                "bottomText": null,
+                "bottomTextAlignment": null
+            }]
+        },
+
+        {
+            "index": 1,
+            "title": "My Playlists",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "contentType": "history",
+            "numberOfItems": 15,
+            "items": []
+        },
+        
+        {
+            "index": 2,
+            "title": "News",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Top Stories",
+                    "DisplayName": "Top Stories",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_usnews.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/top_stories_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/usnews.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=1",
+                    "shareUrl": "https://search.audioburst.com/channel?p=Top%20Stories",
+                    "playlistKeywordName": "US News",
+                    "showPlaylistKeyword": true,
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "US News",
+                    "DisplayName": "US News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_usnews.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/us_news_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/usnews.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=4",
+                    "shareUrl": "https://search.audioburst.com/channel?p=US%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "World News",
+                    "DisplayName": "World News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_worldnews.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/world_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/worldnews.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=6",
+                    "shareUrl": "https://search.audioburst.com/channel?p=World%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Entertainment News",
+                    "DisplayName": "Entertainment News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_entertainment.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/entertainment_01_home.jpg?",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/entertainment.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=9",
+                    "shareUrl": "https://search.audioburst.com/channel?p=Entertainment%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Business News",
+                    "DisplayName": "Business News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_business.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=3",
+                    "shareUrl": "https://search.audioburst.com/channel?p=Business%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Sports News",
+                    "DisplayName": "Sports News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_sports.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sports_01_home.jpg?",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sports.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=10",
+                    "shareUrl": "https://search.audioburst.com/channel?p=Sports%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Tech News",
+                    "DisplayName": "Tech News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_tech.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/tech_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/tech.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=5",
+                    "shareUrl": "https://search.audioburst.com/channel?p=Tech%20News",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Health and Science",
+                    "DisplayName": "Health and Science",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_health.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/health_science_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/health.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=8",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "US Politics",
+                    "DisplayName": "US Politics",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/us_politics_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=63",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+
+
+        {
+            "index": 3,
+            "title": "This Week's Big Stories",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.5,
+            "heightRatio": 0.3,
+            "layout": "horizontal",
+            "items": [
+                {
+                    "name": "Market Meltdown",
+                    "DisplayName": "Market Meltdown",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/market_meltdown_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=172",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Coronavirus",
+                    "DisplayName": "Coronavirus",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/china_virus_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=146",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Democratic Primaries",
+                    "DisplayName": "Democratic Primaries",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/democratic_primaries_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=148",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+                
+
+        
+        {
+            "index": 4,
+            "title": "Entertainment",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Entertainment News",
+                    "DisplayName": "Entertainment News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_entertainment.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/entertainment_01_home.jpg?",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/entertainment.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=9",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Celebs",
+                    "DisplayName": "Celebs",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/celebs_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=16",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "TV & Movies",
+                    "DisplayName": "TV & Movies",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/tv_and_movies_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=25",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Music",
+                    "DisplayName": "Music",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/music_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=58",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Comedy",
+                    "DisplayName": "Comedy",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/comedy_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=48",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "index": 5,
+            "title": "Sports",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Sports News",
+                    "DisplayName": "Sports News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_sports.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sports_01_home.jpg?",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sports.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=10",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "NFL",
+                    "DisplayName": "NFL",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nfl_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=122",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "MLB",
+                    "DisplayName": "MLB",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/mlb_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=119",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "NBA",
+                    "DisplayName": "NBA",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nba_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=120",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "NHL",
+                    "DisplayName": "NHL",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nhl_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=118",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "NCAA",
+                    "DisplayName": "NCAA",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/ncaa_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=117",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "WNBA",
+                    "DisplayName": "WNBA",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/wnba_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=124",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Boxing",
+                    "DisplayName": "Boxing",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/boxing_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=125",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Tennis",
+                    "DisplayName": "Tennis",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/tennis_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=121",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "NASCAR",
+                    "DisplayName": "NASCAR",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nascar_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=123",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Wrestling and MMA",
+                    "DisplayName": "Wrestling and MMA",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/wrestling_and_mma_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=126",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "FIFA",
+                    "DisplayName": "FIFA",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/fifa_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=127",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+
+        {
+            "index": 6,
+            "title": "Local News",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.4,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "New York Local News",
+                    "DisplayName": "New York\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/new_york_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=128",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Los Angeles Local News",
+                    "DisplayName": "Los Angeles\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/los_angeles_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=129",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Chicago Local News",
+                    "DisplayName": "Chicago\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/chicago_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=130",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Dallas Local News",
+                    "DisplayName": "Dallas\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/dallas_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=131",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Houston Local News",
+                    "DisplayName": "Houston\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/houston_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=132",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Washington DC Local News",
+                    "DisplayName": "Washington DC\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/washington_dc_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=133",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Miami Local News",
+                    "DisplayName": "Miami\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/miami_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=134",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Philadelphia Local News",
+                    "DisplayName": "Philadelphia\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/philadelphia_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=135",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Atlanta Local News",
+                    "DisplayName": "Atlanta\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/atlanta_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=136",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Boston Local News",
+                    "DisplayName": "Boston\nLocal News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/boston_local_news_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=137",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+
+
+        {
+            "index": 7,
+            "title": "Business",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Business News",
+                    "DisplayName": "Business News",
+                    "image": {
+                        "url": "https://storageaudiobursts.azureedge.net/site/images/ShareIcons/share_business.png",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business_01_home.jpg",
+                        "svg": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business.svg"
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=3",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Careers",
+                    "DisplayName": "Careers",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/careers_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=11",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Entrepreneurs",
+                    "DisplayName": "Entrepreneurs",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/entrepreneurs_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=12",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Business Development",
+                    "DisplayName": "Business Development",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business_development_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=26",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Leadership",
+                    "DisplayName": "Leadership",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/leadership_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=27",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Cryptocurrency",
+                    "DisplayName": "Cryptocurrency",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/cryptocurrency_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=50",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Marketing",
+                    "DisplayName": "Marketing",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/marketing_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=66",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Financial Advice",
+                    "DisplayName": "Financial Advice",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/financial_advice_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=64",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Small Business",
+                    "DisplayName": "Small Business",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/small_business_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=76",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+
+        {
+            "index": 8,
+            "title": "Bingeworthy",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.6,
+            "heightRatio": 0.4,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Love & Relationships",
+                    "DisplayName": "Love & Relationships",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/love_and_relationships_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=14",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Documentary",
+                    "DisplayName": "Documentary",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/documentary_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=89",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Paranormal",
+                    "DisplayName": "Paranormal",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/paranormal_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=38",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "True Crime",
+                    "DisplayName": "True Crime",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/crime_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=24",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Business Development",
+                    "DisplayName": "Business Development",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/business_development_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=26",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Editors' Picks",
+                    "DisplayName": "Editors' Picks",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/editors_pick_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=33",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "index": 9,
+            "title": "Tech",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Tech News",
+                    "DisplayName": "Tech News",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/tech_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=5",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Artificial Intelligence",
+                    "DisplayName": "Artificial Intelligence",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/artificial_Intelligence_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=21",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Coding",
+                    "DisplayName": "Coding",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/coding_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=28",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Gaming",
+                    "DisplayName": "Gaming",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/gaming_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=29",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Biotechnology",
+                    "DisplayName": "Biotechnology",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/biotechnology 01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=46",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Gadgets",
+                    "DisplayName": "Gadgets",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/gadgets_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=56",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Voice",
+                    "DisplayName": "Voice",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/voice_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=138",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Podcasting",
+                    "DisplayName": "Podcasting",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/podcasting_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=77",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Future Tech",
+                    "DisplayName": "Future Tech",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/future_tech_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=80",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Cryptocurrency",
+                    "DisplayName": "Cryptocurrency",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/cryptocurrency_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=50",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "index": 10,
+            "title": "Fun",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Kids",
+                    "DisplayName": "Kids",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/kids_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=88",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Trivia",
+                    "DisplayName": "Trivia",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/trivia_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=72",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Comedy",
+                    "DisplayName": "Comedy",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/comedy_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=48",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Offbeat",
+                    "DisplayName": "Offbeat",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/offbeat_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=31",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "index": 11,
+            "title": "Hobbies",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Travel",
+                    "DisplayName": "Travel",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/travel_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=54",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Cars",
+                    "DisplayName": "Cars",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/cars_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=55",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Photography",
+                    "DisplayName": "Photography",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/photography_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=57",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Gadgets",
+                    "DisplayName": "Gadgets",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/gadgets_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=56",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Books",
+                    "DisplayName": "Books",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/books_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=47",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Aviation",
+                    "DisplayName": "Aviation",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/aviation_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=30",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "DIY",
+                    "DisplayName": "DIY",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/diy_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=52",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "History",
+                    "DisplayName": "History",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/history_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=23",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Gardening",
+                    "DisplayName": "Gardening",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/gardening_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=65",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "index": 12,
+            "title": "Playlists We Love",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.6,
+            "heightRatio": 0.4,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Offbeat",
+                    "DisplayName": "Offbeat",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/offbeat_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=31",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Feeling Good",
+                    "DisplayName": "Feeling Good",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/feeling_Good_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=34",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "True Crime",
+                    "DisplayName": "True Crime",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/crime_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=24",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF009C"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "index": 13,
+            "title": "Personal Improvement",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Self Improvement",
+                    "DisplayName": "Self Improvement",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/self_improvement_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=93",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Careers",
+                    "DisplayName": "Careers",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/careers_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=11",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Wellness",
+                    "DisplayName": "Wellness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/wellness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=19",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Leadership",
+                    "DisplayName": "Leadership",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/leadership_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=27",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Activism",
+                    "DisplayName": "Activism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/activism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=110",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Love & Relationships",
+                    "DisplayName": "Love & Relationships",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/love_and_relationships_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=14",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Parenting",
+                    "DisplayName": "Parenting",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/parenting _01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=32",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Beauty",
+                    "DisplayName": "Beauty",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/beauty_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=17",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Sustainability",
+                    "DisplayName": "Sustainability",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sustainability_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=20",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "index": 14,
+            "title": "Health",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Fitness",
+                    "DisplayName": "Fitness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/fitness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=92",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nutrition",
+                    "DisplayName": "Nutrition",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nutrition_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=13",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Wellness",
+                    "DisplayName": "Wellness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/wellness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=19",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mental Health",
+                    "DisplayName": "Mental Health",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/mental-health_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=113",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Alternative Medicine",
+                    "DisplayName": "Alternative Medicine",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/alternative_medicine_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=37",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Health Care",
+                    "DisplayName": "Health Care",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/health_care_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=94",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Addiction and Sobriety",
+                    "DisplayName": "Addiction and Sobriety",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/addiction_and_sobriety_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category114",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "index": 15,
+            "title": "Lifestyle",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.5,
+            "heightRatio": 0.3,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Fashion",
+                    "DisplayName": "Fashion",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/fashion_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=53",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Beauty",
+                    "DisplayName": "Beauty",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/beauty_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=17",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Food & Dining",
+                    "DisplayName": "Food & Dining",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/food_and_dining_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=18",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mindfulness",
+                    "DisplayName": "Mindfulness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/mindfulness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=68",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Sustainability",
+                    "DisplayName": "Sustainability",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/sustainability_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=20",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nutrition",
+                    "DisplayName": "Nutrition",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/nutrition_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=13",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Fitness",
+                    "DisplayName": "Fitness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/fitness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=92",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "index": 16,
+            "title": "Equality & Diversity",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Feminism",
+                    "DisplayName": "Feminism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/feminism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=103",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF10B7FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "LGBTQ",
+                    "DisplayName": "LGBTQ",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/lgbtq_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=104",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Social Identity",
+                    "DisplayName": "Social Identity",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/social_identity_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=109",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Activism",
+                    "DisplayName": "Activism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/activism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=110",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FF79"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Latinx",
+                    "DisplayName": "Latinx",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/latinx_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=105",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFFDA00"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "African American",
+                    "DisplayName": "African American",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/african_american_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=106",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Asian American",
+                    "DisplayName": "Asian American",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/asian_american_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=107",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Native American",
+                    "DisplayName": "Native American",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/native_american_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=108",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+
+        {
+            "index": 17,
+            "title": "Religion & Spirituality",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "items": [{
+                    "name": "Christianity",
+                    "DisplayName": "Christianity",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/christianity_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=49",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF6666"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Islam",
+                    "DisplayName": "Islam",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/islam_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?reviewedOnly=false&category=101",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF1A11FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Judaism",
+                    "DisplayName": "Judaism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/judaism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=100",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00FFD3"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Buddhism",
+                    "DisplayName": "Buddhism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/buddhism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=102",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF9431"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Meditation",
+                    "DisplayName": "Meditation",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/meditation_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=67",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFA607FF"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mindfulness",
+                    "DisplayName": "Mindfulness",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/mindfulness_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=68",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FF00BBB0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Atheism",
+                    "DisplayName": "Atheism",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/atheism_01_home.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/category?category=99",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "FFFF0063"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "index": 18,
+            "title": "From our podcasts",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.27,
+            "heightRatio": 0.27,
+            "layout": "roundedHorizontal",
+            "items": [{
+                    "name": "Does This Happen to You",
+                    "DisplayName": "",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/PODCASTS/15328-Does-This-Happen-to-You.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/search?q=*&sourceid=15328",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "00000000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "The Crime Cafe",
+                    "DisplayName": "",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/PODCASTS/16792-The-Crime-Cafe.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/search?q=*&sourceid=16792",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "00000000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "THE HAPPY WORKAHOLIC PODCAST",
+                    "DisplayName": "",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/PODCASTS/15453-THE-HAPPY-WORKAHOLIC-PODCAST.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/search?q=*&sourceid=15453",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "00000000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "The Heat",
+                    "DisplayName": "",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/PODCASTS/15880-The-Heat.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/search?q=*&sourceid=15880",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "00000000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "The Toxin Terminator",
+                    "DisplayName": "",
+                    "image": {
+                        "url": "",
+                        "thumbnail": "https://storageaudiobursts.azureedge.net/site/images/CategoryIcons/PODCASTS/17715-The-Toxin-Terminator.jpg",
+                        "svg": ""
+                    },
+                    "description": "",
+                    "APIcall": "https://sapi.audioburst.com/v2/topstories/search?q=*&sourceid=17715",
+                    "active": true,
+                    "gradient": {
+                        "colors": [{
+                                "hex": "00000000"
+                            },
+                            {
+                                "hex": "00000000"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "index": 19,
+            "title": "Trending Now",
+            "showTitle": true,
+            "subtitle": null,
+            "showButton": true,
+            "buttonText": "See All",
+            "widthRatio": 0.4,
+            "heightRatio": 0.25,
+            "layout": "horizontal",
+            "itemsContentURL" : "https://sapi.audioburst.com/static/api/mobileHome_TrendingPlaylists/json",
+            "numberOfItems": 10,
+            "items": []
+        }
+        
+
+
+    ]
+}

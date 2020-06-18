@@ -1,0 +1,11 @@
+framework module AudioburstPlayer {
+  umbrella header "AudioburstPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module AudioburstPlayer.Swift {
+    header "AudioburstPlayer-Swift.h"
+    requires objc
+}
