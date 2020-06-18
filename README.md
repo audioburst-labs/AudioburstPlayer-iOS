@@ -24,7 +24,7 @@ AudioburstPlayer consists of two modes of audio player (compact and fullscreen) 
 
 #### CocoaPods (iOS 12+)
 
-You can use [CocoaPods](http://cocoapods.org/) to install `AudioburstPlayer` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install [AudioburstPlayer](https://cocoapods.org/pods/AudioburstPlayer) by adding it to your `Podfile`:
 
 ```ruby
 platform :ios, '12.0'
@@ -87,4 +87,4 @@ Libraries used by AudioburstPlayer (installed as pods dependencies)
 
 
 ## Demo application
-The demo application is a showcase of the AudioburstPlayer. 
+The demo application is a showcase of the AudioburstPlayer.
