@@ -72,12 +72,25 @@ player.load() { [weak self] result in
 ```
 
 ### Step 4. Handle errors
-`AudioburstPlayerError` enum is used to represent errors occured in AudioburstPlayer
+`AudioburstPlayerError` enum is used to represent errors occured in AudioburstPlayer. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:
 
 ```swift
-player.onError() { [weak self] error in
-            self?.showAlert(withTitle: "Error", message: error.localizedDescription)
+extension ViewController: AudioburstPlayerErrorListener {
+    func onError(error: AudioburstPlayerError) {
+         self.showAlert(withTitle: "Error", message: error.localizedDescription)
+    }
 }
+```
+And add listener for player:
+
+```swift
+player.add(errorListener: self)
+```
+
+Please remember about unregistering listener:
+
+```swift
+player.remove(errorListener: self)
 ```
 
 ## Dependencies

@@ -24,8 +24,12 @@ import UserNotifications
 public class ABPlayer {
   public init(appKey: Swift.String, experienceId: Swift.String)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
-  public func onError(completion: @escaping (AudioburstPlayer.AudioburstPlayerError) -> Swift.Void)
+  public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
+  public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   @objc deinit
+}
+public protocol AudioburstPlayerErrorListener {
+  func onError(error: AudioburstPlayer.AudioburstPlayerError)
 }
 @objc @_inheritsConvenienceInitializers @IBDesignable open class LoadableFromXibView : UIKit.UIView {
   @objc @IBOutlet weak public var view: UIKit.UIView!

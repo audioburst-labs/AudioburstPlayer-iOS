@@ -67,9 +67,9 @@ class ViewController: UIViewController {
 
         player = ABPlayer(appKey: applicationKey, experienceId: experienceId)
 
-        player.onError() { [weak self] error in
-            self?.showAlert(withTitle: "Error", message: error.localizedDescription)
-        }
+        player.add(errorListener: self)
+
+        
 
         player.load() { [weak self] result in
             guard let self = self else { return }
@@ -113,6 +113,12 @@ class ViewController: UIViewController {
                 window?.overrideUserInterfaceStyle = .dark
             }
         }
+    }
+}
+
+extension ViewController: AudioburstPlayerErrorListener {
+    func onError(error: AudioburstPlayerError) {
+         self.showAlert(withTitle: "Error", message: error.localizedDescription)
     }
 }
 
