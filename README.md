@@ -2,22 +2,21 @@
 
 ## Introduction
 
-AudioburstPlayer is the SDK for iOS that will let you play your previously prepared playlist of bursts.
+AudioburstPlayer is the SDK for iOS that plays a pre-arranged playlist of audio items - or ‘bursts’ - short snippets of spoken-word audio sourced from live radio and premium podcasts.
 
 ## Features
 
-AudioburstPlayer consists of two modes of audio player - compact and fullscreen which allows you to:
-- download a custom playlist,
-- play any burst from the playlist,
-- skip to the next or previous burst,
-- switch to original listening,
-- move backward and forward within a single burst,
-- preview the title, the show name,
-- play the playlist continuously in a background,
-- control the playlist from the locked screen,
-- plug the headphones or cast the audio to other devices via bluetooth or air-play,
-- see bursts list,
-- support dark/light theme.
+AudioburstPlayer offers two modes: compact and full screen. Both offer the following features:
+- Play any burst from the playlist
+- Skip to the next or previous burst
+- Keep listening (switch to a longer version of the burst)
+- Move playhead backward and forward within a single burst
+- Displays Burst title and Show name
+- Playlist plays continuously in background
+- Playlist can be controlled from locked screen
+- Play playlist via alternative audio output: headphones, bluetooth devices or AirPlay
+- View/scroll bursts in playlists
+- Includes support for Dark Mode
 
 ## Requirements
 
@@ -25,15 +24,12 @@ AudioburstPlayer consists of two modes of audio player - compact and fullscreen 
 - Xcode 11
 
 ## Get Started
-
-This guide is a quick start to add AudioburstPlayer to an iOS app. You can use [CocoaPods](http://cocoapods.org/) to install [AudioburstPlayer](https://cocoapods.org/pods/AudioburstPlayer). The AudioburstPlayerDemo application is a showcase of the AudioburstPlayer.
-
+This guide is a quick walkthrough to add AudioburstPlayer to an iOS app. [AudioburstPlayer](https://cocoapods.org/pods/AudioburstPlayer) can be installed using [CocoaPods](http://cocoapods.org/). The AudioburstPlayerDemo application showcases all features of the AudioburstPlayer. 
 
 ## Prerequisites
 
 ### Audioburst API key
-Your application needs an **application key** (check [Audioburst Studio site](https://studio.audioburst.com/) to obtain the key).
-Also you need to provide **experience id** that represents customized playlist settings (check [Audioburst Studio site](https://studio.audioburst.com/) to obtain the id)
+The application requires an application key and experience ID, both of which can be obtained via [Audioburst Publishers](https://studio.audioburst.com/). The experience ID is a unique identifier for the customized playlist topics chosen during the setup process in Audioburst Publishers.
 
 ## Add AudioburstPlayer to your app
 
@@ -51,7 +47,7 @@ end
 
 ### Step 2. Init AudioburstPlayer
 
-Valid **application key** and **experience id** are needed to initialize player.
+A valid application key and experience ID are required to initialize AudioburstPlayer.
 
 ```swift
 import AudioburstPlayer
@@ -62,7 +58,7 @@ let player = ABPlayer(appKey: "YOUR_APP_KEY", experienceId: "YOUR_EXPERIENCE_ID"
 ```
 
 ### Step 3. Start playing Audioburst content
-You simply need to call one method to load Compact Player view and start playing Audioburst content:
+You simply need to call a method to load Compact Player view and begin playing Audioburst content:
 ```swift
 player.load() { [weak self] result in
     if case let .success(viewController) = result {
@@ -72,7 +68,7 @@ player.load() { [weak self] result in
 ```
 
 ### Step 4. Handle errors
-`AudioburstPlayerError` enum is used to represent errors occured in AudioburstPlayer. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:
+`AudioburstPlayerError` enum is used to represent errors that occur in `AudioburstPlayer`. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:
 
 ```swift
 extension ViewController: AudioburstPlayerErrorListener {
@@ -87,7 +83,7 @@ And add listener for player:
 player.add(errorListener: self)
 ```
 
-Please remember about unregistering listener:
+Don’t forget to unregister listener:
 
 ```swift
 player.remove(errorListener: self)
