@@ -1,0 +1,7 @@
+xcuserdata/
+*.dSYM.zip
+*.ipa
+*.framework
+Pods
+*.xcworkspace
+Podfile.lock

@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 
     @IBOutlet fileprivate weak var playerViewContainer: UIView!
     fileprivate var player: ABPlayer!
-    fileprivate var miniPlayerVC: UIViewController!
+    fileprivate var compactPlayerVC: UIViewController!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         settingsIdTextField.text = experienceId
         reloadPlayerButton.layer.cornerRadius = 9
         darkModeButton.layer.cornerRadius = 9
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0 )
 
         if !applicationKey.isEmpty {
             reloadPlayer()
@@ -63,20 +65,25 @@ class ViewController: UIViewController {
               return
           }
 
-        removeViewControllerAsChild(miniPlayerVC)
+        if let player = player {
+            player.remove(errorListener: self)
+            player.remove(playerListener: self)
+        }
+
+        removeViewControllerAsChild(compactPlayerVC)
 
         player = ABPlayer(appKey: applicationKey, experienceId: experienceId)
 
         player.add(errorListener: self)
 
-        
+        player.add(playerListener: self)
 
         player.load() { [weak self] result in
             guard let self = self else { return }
 
             if case let .success(viewController) = result {
-                self.miniPlayerVC = viewController
-                self.addViewControllerAsChild(self.miniPlayerVC, parentView: self.playerViewContainer)
+                self.compactPlayerVC = viewController
+                self.addViewControllerAsChild(self.compactPlayerVC, parentView: self.playerViewContainer)
                 self.updateUserDefaults()
             }
         }
@@ -119,6 +126,12 @@ class ViewController: UIViewController {
 extension ViewController: AudioburstPlayerErrorListener {
     func onError(error: AudioburstPlayerError) {
          self.showAlert(withTitle: "Error", message: error.localizedDescription)
+    }
+}
+
+extension ViewController: AudioburstPlayerListener {
+    func onClose() {
+        removeViewControllerAsChild(compactPlayerVC)
     }
 }
 

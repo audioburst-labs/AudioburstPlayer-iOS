@@ -115,7 +115,7 @@
 			buildConfigurationList = 44E0DD2422553C7400BE3351 /* Build configuration list for PBXNativeTarget "AudioburstPlayerDemo" */;
 			buildPhases = (
 				B989DEC6D5BD0F7E51680F21 /* [CP] Check Pods Manifest.lock */,
-				9230AD3E7CF8738E1DA51CAF /* [CP] Prepare Artifacts */,
+				4FA2C069897A646766855B6D /* [CP] Prepare Artifacts */,
 				44E0DD0E22553C7100BE3351 /* Sources */,
 				44E0DD0F22553C7100BE3351 /* Frameworks */,
 				44E0DD1022553C7100BE3351 /* Resources */,
@@ -201,7 +201,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioburstPlayerDemo/Pods-AudioburstPlayerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9230AD3E7CF8738E1DA51CAF /* [CP] Prepare Artifacts */ = {
+		4FA2C069897A646766855B6D /* [CP] Prepare Artifacts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +379,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = G52CJGY2AJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,7 +408,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = G52CJGY2AJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

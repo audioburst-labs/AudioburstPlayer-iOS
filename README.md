@@ -18,6 +18,10 @@ AudioburstPlayer offers two modes: compact and full screen. Both offer the follo
 - View/scroll bursts in playlists
 - Includes support for Dark Mode
 
+<p align="middle">
+<img src="screenshots/floating_player_1.png?raw=true"  width="200" hspace="5" title="Floating player"/><img src="screenshots/floating_player_2.png?raw=true"  width="200" hspace="5" /><img src="screenshots/mini_player.png?raw=true"  width="200" hspace="5" /><img src="screenshots/fullscreen_player.png?raw=true"  width="200" />
+</p>
+
 ## Requirements
 
 - iOS 12.0+
@@ -57,8 +61,9 @@ import AudioburstPlayer
 let player = ABPlayer(appKey: "YOUR_APP_KEY", experienceId: "YOUR_EXPERIENCE_ID")
 ```
 
-### Step 3. Start playing Audioburst content
-You simply need to call a method to load Compact Player view and begin playing Audioburst content:
+### Step 3. Loading Audioburst content
+You simply need to call one method to load Audioburst content and get compact player view controller. Depending on mode set in Audioburst Studio, you will get floating player or mini player view controller Recommended view container size is: height `100 points`, width: `full screen width` )
+
 ```swift
 player.load() { [weak self] result in
     if case let .success(viewController) = result {
@@ -89,6 +94,29 @@ Don’t forget to unregister listener:
 player.remove(errorListener: self)
 ```
 
+### Step 5. Handle player events
+To handle player events make your class implement `AudioburstPlayerListener` protocol, for example:
+
+```swift
+extension ViewController: AudioburstPlayerListener {
+    func onClose() {
+        removeViewControllerAsChild(compactPlayerVC)
+    }
+}
+```
+And add listener for player:
+
+```swift
+player.add(playerListener: self) 
+```
+
+Don’t forget to unregister player listener:
+
+```swift
+player.remove(playerListener: self)
+```
+
+
 ## Dependencies
 Libraries used by AudioburstPlayer (installed as pods dependencies)
 
@@ -99,3 +127,12 @@ Libraries used by AudioburstPlayer (installed as pods dependencies)
 - `lottie-ios`
 - `SDWebImage`
 - `OwlKit`
+
+
+
+## Privacy Policy
+[Privacy Policy](https://audioburst.com/privacy)
+
+## Terms of Service 
+[Terms of Service](https://audioburst.com/audioburst-publisher-terms)
+

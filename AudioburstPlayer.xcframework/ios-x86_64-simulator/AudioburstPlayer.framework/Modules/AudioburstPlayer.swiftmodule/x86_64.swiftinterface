@@ -21,11 +21,16 @@ import UIKit.UIFont
 import UIKit.UIImage
 import UIKit
 import UserNotifications
+extension UIColor {
+  public class func dynamicColor(light: UIKit.UIColor, dark: UIKit.UIColor) -> UIKit.UIColor
+}
 public class ABPlayer {
   public init(appKey: Swift.String, experienceId: Swift.String)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
+  public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
+  public func remove(playerListener: AudioburstPlayer.AudioburstPlayerListener)
   @objc deinit
 }
 public protocol AudioburstPlayerErrorListener {
@@ -65,4 +70,7 @@ extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
+}
+public protocol AudioburstPlayerListener {
+  func onClose()
 }
