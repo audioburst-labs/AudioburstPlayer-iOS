@@ -19,7 +19,7 @@ AudioburstPlayer offers two modes: compact and full screen. Both offer the follo
 - Includes support for Dark Mode
 
 <p align="middle">
-<img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/floating_player_1.png?raw=true"  width="200" hspace="5" title="Floating player"/><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/floating_player_2.png?raw=true"  width="200" hspace="5" /><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/mini_player.png?raw=true"  width="200" hspace="5" /><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/fullscreen_player.png?raw=true"  width="200" />
+<img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/floating_player_1.png?raw=true"  width="180" hspace="5" title="Floating player"/><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/floating_player_2.png?raw=true"  width="180" hspace="5" /><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/mini_player.png?raw=true"  width="180" hspace="5" /><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/fullscreen_player.png?raw=true"  width="180" />
 </p>
 
 ## Requirements
