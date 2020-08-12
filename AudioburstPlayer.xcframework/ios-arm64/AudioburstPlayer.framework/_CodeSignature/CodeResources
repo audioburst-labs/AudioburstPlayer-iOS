@@ -6,39 +6,39 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		IBaTi+vRPDdfHETF7NhPDnSHBc0=
+		bTFhvyfB/TnXDOUOy/uGm21yxGE=
 		</data>
 		<key>BigPlaylistCell.nib/objects-12.3+.nib</key>
 		<data>
-		NewEiqa28Nlwn3LA5hFZ0IDZJTg=
+		G4ACRilWvj6juKwjwFrFYCTNyQc=
 		</data>
 		<key>BigPlaylistCell.nib/runtime.nib</key>
 		<data>
-		9TjlwvHsAvfSdL5gstPQcIRHXbM=
+		HpbgAhPKhH5o/SDruWvECYZ0D0o=
 		</data>
 		<key>BurstCell.nib/objects-13.0+.nib</key>
 		<data>
-		/xzUAW2zThnNKJq7PiDNrxsbTnw=
+		+ZrZ8MWzEke7FeF47FrM9VafNaw=
 		</data>
 		<key>BurstCell.nib/runtime.nib</key>
 		<data>
-		LUT3ROWDweguZGsiemuTy9+KLeA=
+		e8IdJgoF6M1fOLuPTd/Clh8/eKI=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/BurstsList.nib/objects-13.0+.nib</key>
 		<data>
-		fNdtXr/NmiE3znlwWe0m4x/GGUk=
+		fr0/jwpbuW+F7UyOiGxhR6xhjzw=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/BurstsList.nib/runtime.nib</key>
 		<data>
-		6T/ngqlfYKbRuKSvfRdpHII/RYo=
+		rSftrB1TBxwsQx/lpBKSfTwAY4M=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/BurstsListNC.nib/objects-13.0+.nib</key>
 		<data>
-		+A7a6/pEG9tbZ/iYfaGsrYw4US0=
+		tHTaH560hsesRFUzEeHhqwSmBBI=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/BurstsListNC.nib/runtime.nib</key>
 		<data>
-		VB2UCOLUjUPjq995EtrbVn11uR0=
+		Tfe5AaNuY00LOtbA34T+nSAQmuE=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -46,27 +46,27 @@
 		</data>
 		<key>BurstsListStoryboard.storyboardc/ltp-qk-65K-view-hiI-eg-qNt.nib/objects-13.0+.nib</key>
 		<data>
-		brPX+Rng+LGpED72hU/O017GV5M=
+		9HQ1WDijoybD+MmmnGOXqkYq9FE=
 		</data>
 		<key>BurstsListStoryboard.storyboardc/ltp-qk-65K-view-hiI-eg-qNt.nib/runtime.nib</key>
 		<data>
-		jyEA7PZqMA9TNLmhJP9hpscUFZU=
+		gholU6yGjrQBxGd3wjrvziyL26Y=
 		</data>
 		<key>CompactPlayerViewController.nib</key>
 		<data>
-		o1ttRcxgmS4eEvaMQVJSkozwokk=
+		BRLvAhyBVr7hfFzIxQ18LtC6H5o=
 		</data>
 		<key>CustomAnimationView.nib</key>
 		<data>
-		JEHzlAzHju4inAP0WwzZ9UdGghk=
+		5rybF7iswrUORDna9IBUYf6nc78=
 		</data>
 		<key>DialogStoryboard.storyboardc/Dialog.nib/objects-13.0+.nib</key>
 		<data>
-		RKnXO9W5nJnQNm6unH/90p9S63k=
+		qLCQGJjWi3iq10CT8Uac8QynDEw=
 		</data>
 		<key>DialogStoryboard.storyboardc/Dialog.nib/runtime.nib</key>
 		<data>
-		8upG4ffbXrCKibk0wiwYIX3Nrt0=
+		GgYJ+3qpqMG+5gKc/GyTMDKNEEc=
 		</data>
 		<key>DialogStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>DialogStoryboard.storyboardc/bQS-bt-HBU-view-gMy-MU-6Xb.nib/objects-13.0+.nib</key>
 		<data>
-		A03v9mUxAKjUj45Dj7WZypH+YJM=
+		HSQLzv20J5qRWzrbJWWKagXtS+M=
 		</data>
 		<key>DialogStoryboard.storyboardc/bQS-bt-HBU-view-gMy-MU-6Xb.nib/runtime.nib</key>
 		<data>
-		cwgaoenPi426040II2Et668Kafs=
+		9lPS5lM0gNBGIBWT6ZnkNX72N6c=
 		</data>
 		<key>EmptyBurstCell.nib/objects-13.0+.nib</key>
 		<data>
-		juKwTJjSCMPOPpbsKQUwQAKhsjQ=
+		zWh3hAyZzLJPjsf5mUl4zqRnUGY=
 		</data>
 		<key>EmptyBurstCell.nib/runtime.nib</key>
 		<data>
-		b+kqeOlvc4vtGi2L4vj0nOilIe8=
+		xZ6y5buD03arYT4c7Dd9sj552vk=
 		</data>
 		<key>EnvironmentConstants.plist</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>FloatingPlayerViewController.nib/objects-13.0+.nib</key>
 		<data>
-		JRnlVGrbEgHQD9vFDFqHkMUA2xc=
+		/RNu1pXzbdTSqvkTsNUzY8dCiGI=
 		</data>
 		<key>FloatingPlayerViewController.nib/runtime.nib</key>
 		<data>
-		bG6LDcnkWE0xio/+D100wITzAwU=
+		EGgxPcHnIccKthI/tRRNWZoQCmE=
 		</data>
 		<key>Headers/AudioburstPlayer-Swift.h</key>
 		<data>
@@ -114,31 +114,31 @@
 		</data>
 		<key>HomePlaylistCell.nib/objects-12.3+.nib</key>
 		<data>
-		lrDXADq3Em5B+Hqms7ZpBUOf+vg=
+		7DOS9ZS/8XYqH65Qz6IRK0nCzAU=
 		</data>
 		<key>HomePlaylistCell.nib/runtime.nib</key>
 		<data>
-		psg18XdHzq+qdQ1KnBAjkhXpBMU=
+		x41N4ZH/DcTb5Zo19D9HdSG2DFU=
 		</data>
 		<key>HorizontalCarouselCell.nib/objects-12.3+.nib</key>
 		<data>
-		DXbaKijC0TBQ+Q8s/zCOKlqESu4=
+		SqTrc2L2MIKtEtqddcA4tAW50zo=
 		</data>
 		<key>HorizontalCarouselCell.nib/runtime.nib</key>
 		<data>
-		1Zqo3ieEYjL80KT1Jg2dsrLxmn0=
+		pQJYguDgPg7WggFgeXmF+7ZdCpU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yM0UJkjz/gPbjJE1IAZSFMMgWb0=
+		618NuT0f5994ld86buArtp2+w3w=
 		</data>
 		<key>KeywordCell.nib/objects-12.3+.nib</key>
 		<data>
-		XZ1Nz6TMNW6dM5pvttjrTuNXV6g=
+		LAx+HAUQdlW24Qrq3OCKIHbmiBE=
 		</data>
 		<key>KeywordCell.nib/runtime.nib</key>
 		<data>
-		LqLTPNzI3PypS55xtGktYvFOu+Y=
+		oAAPsZZt7GPoqEGGQvkypuWX0yI=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -150,11 +150,11 @@
 		</data>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		NUt/GN9rCZKbtGQXKK5lgIXeAdE=
+		kk0A6FncYuehZJZtskzxYQa+MCM=
 		</data>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eyTlDxpLvuHQyDqpnq71p8tv/E8=
+		nRuqtgNHDarCq3t0EoYSReTimlM=
 		</data>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		NUt/GN9rCZKbtGQXKK5lgIXeAdE=
+		kk0A6FncYuehZJZtskzxYQa+MCM=
 		</data>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		eyTlDxpLvuHQyDqpnq71p8tv/E8=
+		nRuqtgNHDarCq3t0EoYSReTimlM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,15 +190,15 @@
 		</data>
 		<key>PlayerBurstInfoCell.nib/objects-12.3+.nib</key>
 		<data>
-		Ah81rXkrObcAJlLoeFhcoh9rTa8=
+		zSHAhTarcl7c6+Bu3NyW9wVsIQA=
 		</data>
 		<key>PlayerBurstInfoCell.nib/objects-13.0+.nib</key>
 		<data>
-		s3synJefgHSVDFvZI5tPuxhPaSc=
+		PweccfjW/61n3/ki5N9DKSo14+I=
 		</data>
 		<key>PlayerBurstInfoCell.nib/runtime.nib</key>
 		<data>
-		yHfe3aDTp1ope1fZGWGDVJCG5WM=
+		aIrygKAeYp8py0ifmhD7nAj4UgA=
 		</data>
 		<key>PlayerStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -206,51 +206,51 @@
 		</data>
 		<key>PlayerStoryboard.storyboardc/NewPlayer.nib/objects-13.0+.nib</key>
 		<data>
-		c585myyouiqJnHimXQOeIjST8JI=
+		K8bMKHvhc3T3JgaQrX2t166/2YA=
 		</data>
 		<key>PlayerStoryboard.storyboardc/NewPlayer.nib/runtime.nib</key>
 		<data>
-		zv8/pzOAcLFgg3+wM/1r8TrkhYU=
+		hDNnnpN+t32fINYcC/Ti8cKsXpM=
 		</data>
 		<key>PlayerStoryboard.storyboardc/QdJ-ai-gGz-view-a8o-4M-3KT.nib/objects-13.0+.nib</key>
 		<data>
-		Cet9vXOL0TPv8aBOFe9xEt6aPPw=
+		9JKT6bKOhq6bdBlNprHjsPJCN6Q=
 		</data>
 		<key>PlayerStoryboard.storyboardc/QdJ-ai-gGz-view-a8o-4M-3KT.nib/runtime.nib</key>
 		<data>
-		nnyVOYMsUBYWPqK9SHeH/MS7gWA=
+		KT47bE+Si3yB/i7vfZSP1m0fD3I=
 		</data>
 		<key>RoundedHorizontalCarouselCell.nib/objects-12.3+.nib</key>
 		<data>
-		ZThFLa65+tptrQ9PAwYqB8WPzzY=
+		vyjhQd68Qgic7CKJREQQaFzN8C8=
 		</data>
 		<key>RoundedHorizontalCarouselCell.nib/objects-13.0+.nib</key>
 		<data>
-		/G4rv5WDuHFGiRKciGQ31UDpvW8=
+		xac8YWZUf3b7AlMCO7tvpuT7/oQ=
 		</data>
 		<key>RoundedHorizontalCarouselCell.nib/runtime.nib</key>
 		<data>
-		VMIhdOcV5v1lWupJBP3UF/kboVg=
+		bW250wMJ1lJwR3jX2upjwYAhSBI=
 		</data>
 		<key>SwipeTutorialView.nib/objects-13.0+.nib</key>
 		<data>
-		8V/kEbYSMu+q/UOaG6XUhKkqGkE=
+		IhK4Zoi/xVtDWZPZ23LGtVFB0qc=
 		</data>
 		<key>SwipeTutorialView.nib/runtime.nib</key>
 		<data>
-		+S3tYXTuPrgohFxoVz4720kcxco=
+		iTNnu0PRoZw1riq3AnEyY71oF2o=
 		</data>
 		<key>VerticalLayoutPlaylistCell.nib/objects-12.3+.nib</key>
 		<data>
-		nQZbhF1Bv9UGGDqtzZyp+teqPO0=
+		cxr+iuq+S3fprkbQgHmdS3qhu8U=
 		</data>
 		<key>VerticalLayoutPlaylistCell.nib/objects-13.0+.nib</key>
 		<data>
-		4IyFTMWLPayzQdxAkgc/Yr3islQ=
+		2AorHEZY2gnumXVGbxhnGt8JHM0=
 		</data>
 		<key>VerticalLayoutPlaylistCell.nib/runtime.nib</key>
 		<data>
-		HRvJTMTrMTwrAsY1iQccIap159o=
+		UqRm7OuZS7B4eFwpLPerkBgyf10=
 		</data>
 		<key>rectangles.json</key>
 		<data>
@@ -267,63 +267,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6hioLMncZWl8gplRQosMa2hRbfZvlEQPNhZ47rXQSLQ=
+			F2Gm4h+7FPFrfYHQEXjWXuQ0u75AA/cHoLId2rIhCZI=
 			</data>
 		</dict>
 		<key>BigPlaylistCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vIysi+mu1MsKYIbDD8hB+T2PmH62V4yrzOAYTk2TBHc=
+			T03b/0t9zVvWbVgxHUmcY1rLHOROzbi2TavJbzO7z30=
 			</data>
 		</dict>
 		<key>BigPlaylistCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IysbOUxMhVhQvXByuHpGgxyYpIPUyYWHbvUsHj/jW8Y=
+			C+nnKNbZpJtqZtS1ulGLSnH0OVOax6WIXNkX6fXoiRI=
 			</data>
 		</dict>
 		<key>BurstCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4l313MlbYy6inUnsvmjUjK9Xwy7rw5l/NWbNrKiDAXg=
+			LDtWePOaV5vdkRUoL2MJb3G+2KuiRgySbcBgkxsDZh0=
 			</data>
 		</dict>
 		<key>BurstCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mz6OKt2LLEiPcj8VCfNE/YH0IT1YRhG9A4UTO3LPFSw=
+			+Kpk/lMQW/BXyqNkPsYMvdtvZoda2Z7vtGI0YJ2zYdo=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/BurstsList.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xobeGHv1cOvo3Q9No93tor+3qq1iVbAkcBX6n3aEgwI=
+			QmOtSlHeE+TcwVUe4w15y6evFOXHH7Xp7RLfy40Wp6w=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/BurstsList.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WjFjAg1gzZRzdZs/TmEw1Cda3UEBkYSDwWBJGay7w60=
+			KurKPl0acHTVfVv2L2895ueDcoZ+eemj8zSV1TrFCKo=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/BurstsListNC.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xFhz8S5oyIujdR5rpFIhcQzP0K810cu295x/bCiSR+U=
+			N13FoMSUf3FOK1fn9StaUB5yTBA1eacyT59+XtzYl0g=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/BurstsListNC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjX5Ko4zqhDsJ66jRdt6T47mq/SWoRnw7HGh25yAqyg=
+			Tpy52AprIMyeNHuBzp8HdVEPYnm1XocVPNuByJWsU80=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/Info.plist</key>
@@ -337,42 +337,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZaiCzSmQUbvYFeQpTqAoeXPd/vgVrL/gSTrOeEDKSA4=
+			MQgS4duTyh7elWQuakElmvs2cXbkJEMMNLK6s1MeqhU=
 			</data>
 		</dict>
 		<key>BurstsListStoryboard.storyboardc/ltp-qk-65K-view-hiI-eg-qNt.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XgVHUkyW1CFU1/4Dg2hMfWAqO6oL22uHCbtt5JkI4P0=
+			QB544Qc+ZAx4K2wyRza+2BTG+qUTi97o54swQO6XagE=
 			</data>
 		</dict>
 		<key>CompactPlayerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JXhC5OgCj7SBKdyQaBrzZLvlbo3QTT/T1XD/ztqzqlI=
+			GDquw3d1AE27/u848Nf47U+kcXA8quu9twrskH2Zp4c=
 			</data>
 		</dict>
 		<key>CustomAnimationView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XbP75NMry14qEe+GukeQUe6Qk3+3KuixQ0JBOorSUek=
+			0ZsoJEgJDzWI8aXUpNdqnspQaP6wyVLKRkECC2KHr+I=
 			</data>
 		</dict>
 		<key>DialogStoryboard.storyboardc/Dialog.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTYjxsuf1OJ7YKHZLHbti32Uk+yXIDtG3WqoIPxMsc=
+			yBtnMHQLPO/AAjfqFVQIqxM/8rwVwUApc0iVys46Y8A=
 			</data>
 		</dict>
 		<key>DialogStoryboard.storyboardc/Dialog.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3BSnNG6GfJ0sAk/NlPNA2FwRFbVcDwPgDAGvHHME/s4=
+			ASzZoEhXbCRDO8zLLhqNHe16ghfOsTM/wfdsHCYY548=
 			</data>
 		</dict>
 		<key>DialogStoryboard.storyboardc/Info.plist</key>
@@ -386,28 +386,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FF9KOH4ym24VxEUZg1nTwN2vPzlxh80oWwoLhBo+j18=
+			cxpWWXloOi0fxKnhLoubrsIoZuz31qCrIT6Le+QmtjQ=
 			</data>
 		</dict>
 		<key>DialogStoryboard.storyboardc/bQS-bt-HBU-view-gMy-MU-6Xb.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E0ZSi0oQO7WHBgqw9Jczs3twnV9pJuiXzT/8DON4KyA=
+			Y2NUb46X9+eTHTY9h5jBedPnccwAeOE7KF5WtvvMQPM=
 			</data>
 		</dict>
 		<key>EmptyBurstCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NUAEOmyEhC8MNINC9HFp4R52FleqS4rJ2wE8oY9C2CY=
+			Ety6ozxg3NLkpuEcFOia4Y2ID5y9eb/lzyEJ2Lfwelo=
 			</data>
 		</dict>
 		<key>EmptyBurstCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51ZcObzIJ6PbOJ9XEAERNuYV5fePZ/hToXjvi/Re2ow=
+			5XG53Eego/HSPvYG6X1V7hH91++0tulichoKpNpgZ2w=
 			</data>
 		</dict>
 		<key>EnvironmentConstants.plist</key>
@@ -421,14 +421,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRljJJgyYl+uI3z4ZGJ/4ZzomzWaDV/LB++SU8yNdPA=
+			8wLW07SzHhqN+hciEMYLAAwp1cmH/D/qgOYxxU5MnSA=
 			</data>
 		</dict>
 		<key>FloatingPlayerViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHjXITTg8E5sXHo7TNFEsfhoAOhYrrs8C6NSD0vZL/0=
+			U2sf0D2pTXxHhAvhyjjDAIPXRb9aa8kiNKg+256cQxw=
 			</data>
 		</dict>
 		<key>Headers/AudioburstPlayer-Swift.h</key>
@@ -456,42 +456,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hqY3nnWJbloZlwguHxkLa7pcfUtupp4g70+/OwmN3FE=
+			KwFo7ZSIfxsBHVZCKss00ro2busjAUW6cWA3cco1TGI=
 			</data>
 		</dict>
 		<key>HomePlaylistCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKR9kDglCRDt8PVRkqI2yjSGbjLVwBKDejC0TWExZqc=
+			6gAXo2O7Zv2uJ7bcadVoU28FPfqjXxdkhwMWj+10J70=
 			</data>
 		</dict>
 		<key>HorizontalCarouselCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qvlbHBr5GEpAfrvgpRhcBJySgg/m2TaJEgWvqBsc0Mk=
+			FYcbpeh1qLodJia9EotGWCQWV/0/g6KgCv8Dl9Wxtz4=
 			</data>
 		</dict>
 		<key>HorizontalCarouselCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WarOqU9nkyFZH1y1dujM7WY/ck+is1NfPeiKgEmIBvc=
+			3cc+W525WGrz07qKeaniDuDm+463M1/L7ib4cCqtfuM=
 			</data>
 		</dict>
 		<key>KeywordCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFvnuBXQadpBbCwpcWnkNQmkOyE8zCN9Rw4KylfF/g8=
+			safaGqKDXqh6Pd5OoJKTee05B1QQ8yfw/B4H+a6XanA=
 			</data>
 		</dict>
 		<key>KeywordCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XiSM1tNAKRfiPBKd9fi/dJutNgbvm5wL6+eoE4f+CW4=
+			/mi8Gyz/fY/wWFgIIUbq9hrzmQI3wpNuHpNc+Hhop4w=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -512,14 +512,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYMBUW+YKlvKcnk6kYAQR9w2wauIb/JtrmqRaVTqle8=
+			OcgUTXYyKorp3NZRyJ4ec908UUHYJTPqrJWUGhNMqIg=
 			</data>
 		</dict>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pSWSIudJ27wdZx9biLoOD/bd06AUoPf127EkMq4AcLU=
+			MbqfjpWiUC1Ygo5QlvZwlD2kQ++apgFyv/55ef6SOSQ=
 			</data>
 		</dict>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64.swiftdoc</key>
@@ -533,14 +533,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYMBUW+YKlvKcnk6kYAQR9w2wauIb/JtrmqRaVTqle8=
+			OcgUTXYyKorp3NZRyJ4ec908UUHYJTPqrJWUGhNMqIg=
 			</data>
 		</dict>
 		<key>Modules/AudioburstPlayer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pSWSIudJ27wdZx9biLoOD/bd06AUoPf127EkMq4AcLU=
+			MbqfjpWiUC1Ygo5QlvZwlD2kQ++apgFyv/55ef6SOSQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -582,21 +582,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RP6GhQ+BQmqppC/njAsyGvg39E9ls+nf2ufpTYAYi+A=
+			yPO+tfj9kwS3Ge8QIjSbdld4Mjum1J1KEd0o2InPn0o=
 			</data>
 		</dict>
 		<key>PlayerBurstInfoCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			baryRtCFPnwen8rFRbLzrTZUsd1xCzLCMRKjOKWKSY4=
+			bkNFkhPh5zOAHreUs0R/U78CHhbuZIYwrYaKZqMprK0=
 			</data>
 		</dict>
 		<key>PlayerBurstInfoCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RJ+xjiShG8ZZuFXvLCIYNg9EjuroUbNw7eMH2JY/g4Q=
+			t6dMj7QVojyk9dFPtMtmun23GPtxuT8k/cvCaLo1BJ8=
 			</data>
 		</dict>
 		<key>PlayerStoryboard.storyboardc/Info.plist</key>
@@ -610,84 +610,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l+XNYb02yJyjrJjoSgccUdV14broFOBr7RMFxPlQ8ro=
+			I5ZQ1EqlBN7+tpav/02stPLopYdfVj9vRyk+dcd0gUs=
 			</data>
 		</dict>
 		<key>PlayerStoryboard.storyboardc/NewPlayer.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZDGc1I9rYNHqRK8EjrahUxnaNEt0szBHrOqT78oyhpM=
+			Y9wK5hm0nEwgdXJiRrl9hr1DQtuQu4wB19NnLNuztsI=
 			</data>
 		</dict>
 		<key>PlayerStoryboard.storyboardc/QdJ-ai-gGz-view-a8o-4M-3KT.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PWJAJHSHkJE/x08TEeM1bICooylPHu61dn/66Q6qmxU=
+			bt5RQiY/aqwQcPbGwauszCxI/qphOOEH3t6yDgK4/bc=
 			</data>
 		</dict>
 		<key>PlayerStoryboard.storyboardc/QdJ-ai-gGz-view-a8o-4M-3KT.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MoRCxr1O0mbOrYeT6hTmYzuoiUvNGb7BFHp/1tIe75E=
+			vCgpjS3rwArYBhvxpAVXA88ZRmsuQA1jvmlBoC0D4aA=
 			</data>
 		</dict>
 		<key>RoundedHorizontalCarouselCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+FToG9KOrLR7CiRSULG1oVc5d3h9qxdHzqZe7TTt6k=
+			Ml8Qz5h6kvrQehtU+ulprUhq1R4G+zN1JFyj/RCQnIc=
 			</data>
 		</dict>
 		<key>RoundedHorizontalCarouselCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U2Ej+XOSfwwew0ob+/Kq10UqULl2cXXtKe28nxzDOQk=
+			0xd2gAAp1SzSxxlZ2CwGUprKc7o8pYNyG7Jpym9ZYOY=
 			</data>
 		</dict>
 		<key>RoundedHorizontalCarouselCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			REkYwE8uHIi8+hpS0KsQVCSOzRPCK0uF52QzAmHYTXs=
+			xeaHI+m7nt4pNKrF/AC5K+e/wmgUtQh3XyFhBUqKqLo=
 			</data>
 		</dict>
 		<key>SwipeTutorialView.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wIIAaoRJH6Ruq64+0BjXbghg72RMwuXb5C+DPxujSFQ=
+			TCsea2I3+pYzDLVLUTfNMsMTmYIrmJIOIXKJWrSqbH8=
 			</data>
 		</dict>
 		<key>SwipeTutorialView.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			19NESr2Ycax6gGP0KAjp6G2bcufI5g3cYs1UkXp4l1E=
+			bwO7wkb0/wkWAct/VQ86V5JLbbS+ib79QXpFOw+/268=
 			</data>
 		</dict>
 		<key>VerticalLayoutPlaylistCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+XwMhJ7aGD5215s0zAXK+K/FbFGGIvBjIMHDGsrY/ls=
+			Pb8TbmpFAJhRQfGv1/b0H7ojMXPRqzqpR5ygaerNFEE=
 			</data>
 		</dict>
 		<key>VerticalLayoutPlaylistCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			459gSQC/Ux75W27zvzHAfYfV9Bd0U7VflhBUhFBiViA=
+			KGTPZfJfr/7olEmGnR2UIBfqngCuEDqh+XnvWdDKfss=
 			</data>
 		</dict>
 		<key>VerticalLayoutPlaylistCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sHvBu1bZ5jGaNMqLRSdEemh+pw6f7TeoZpCp02eA6zM=
+			nPyXhqVhgxdVkJjoCXb1IRDsqA5kxHLQA/MFXCWJJHE=
 			</data>
 		</dict>
 		<key>rectangles.json</key>

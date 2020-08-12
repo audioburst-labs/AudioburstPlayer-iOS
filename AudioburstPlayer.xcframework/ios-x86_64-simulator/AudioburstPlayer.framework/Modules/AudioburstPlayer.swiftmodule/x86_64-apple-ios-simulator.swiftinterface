@@ -27,6 +27,7 @@ extension UIColor {
 public class ABPlayer {
   public init(appKey: Swift.String, experienceId: Swift.String)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
+  public func openFullscreenPlayer()
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
@@ -58,6 +59,7 @@ extension CLAuthorizationStatus : Swift.CustomStringConvertible {
 public enum AudioburstPlayerError : Foundation.LocalizedError {
   case wrongAppKey
   case wrongExperienceId
+  case contentNotReady
   case other(Swift.Error)
   public var errorDescription: Swift.String? {
     get

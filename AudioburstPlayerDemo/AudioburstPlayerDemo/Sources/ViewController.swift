@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet fileprivate weak var settingsIdTextField: UITextField!
     @IBOutlet fileprivate weak var reloadPlayerButton: UIButton!
     @IBOutlet weak var darkModeButton: UIButton!
-
+    @IBOutlet weak var fullscreenPlayerButton: UIButton!
+    
     @IBOutlet fileprivate weak var playerViewContainer: UIView!
     fileprivate var player: ABPlayer!
     fileprivate var compactPlayerVC: UIViewController!
@@ -41,8 +42,6 @@ class ViewController: UIViewController {
 
         applicationKeyTextField.text = applicationKey
         settingsIdTextField.text = experienceId
-        reloadPlayerButton.layer.cornerRadius = 9
-        darkModeButton.layer.cornerRadius = 9
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0 )
 
         if !applicationKey.isEmpty {
@@ -51,6 +50,9 @@ class ViewController: UIViewController {
     }
 
     fileprivate func reloadPlayer() {
+        fullscreenPlayerButton.isHidden = true
+        self.view.endEditing(true)
+
         guard let applicationKey = applicationKeyTextField.text, !applicationKey.isEmpty  else {
             let title = "Missing application key"
             let message = "Please provide an application key in order to make the player work. You can obtain the application key on\nhttps://studio.audioburst.com/"
@@ -71,6 +73,7 @@ class ViewController: UIViewController {
         }
 
         removeViewControllerAsChild(compactPlayerVC)
+        compactPlayerVC = nil
 
         player = ABPlayer(appKey: applicationKey, experienceId: experienceId)
 
@@ -85,6 +88,7 @@ class ViewController: UIViewController {
                 self.compactPlayerVC = viewController
                 self.addViewControllerAsChild(self.compactPlayerVC, parentView: self.playerViewContainer)
                 self.updateUserDefaults()
+                self.fullscreenPlayerButton.isHidden = false
             }
         }
     }
@@ -121,6 +125,11 @@ class ViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func showFullscreenPlayer(_ sender: Any) {
+        player.openFullscreenPlayer()
+    }
+
 }
 
 extension ViewController: AudioburstPlayerErrorListener {
@@ -132,6 +141,7 @@ extension ViewController: AudioburstPlayerErrorListener {
 extension ViewController: AudioburstPlayerListener {
     func onClose() {
         removeViewControllerAsChild(compactPlayerVC)
+        fullscreenPlayerButton.isHidden = true
     }
 }
 
@@ -147,6 +157,7 @@ extension ViewController {
         guard let viewController = viewController else { return }
         viewController.willMove(toParent: nil)
         viewController.view.removeFromSuperview()
+        viewController.removeFromParent()
         viewController.didMove(toParent: nil)
     }
 
