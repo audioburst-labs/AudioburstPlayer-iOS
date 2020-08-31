@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AudioburstPlayer'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'Official player from Audioburst'
 
   s.homepage         = 'https://github.com/audioburst-labs/AudioburstPlayer-iOS'
