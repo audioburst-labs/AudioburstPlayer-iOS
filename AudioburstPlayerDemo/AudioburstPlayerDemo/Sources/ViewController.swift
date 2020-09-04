@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var darkModeButton: UIButton!
     @IBOutlet weak var fullscreenPlayerButton: UIButton!
     
-    @IBOutlet fileprivate weak var playerViewContainer: UIView!
+    @IBOutlet fileprivate weak var playerViewContainer: PassthroughView!
     fileprivate var player: ABPlayer!
     fileprivate var compactPlayerVC: UIViewController!
     @IBOutlet weak var scrollView: UIScrollView!

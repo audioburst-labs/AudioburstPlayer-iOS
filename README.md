@@ -74,6 +74,17 @@ player.load() { [weak self] result in
 
 After loading content you can use ` player.openFullscreenPlayer()` to open fullscreen player programmatically. If content is not loaded, calling this method will throw error `AudioburstPlayerError.contentNotReady` in error listener (`AudioburstPlayerErrorListener.onError()`) 
 
+If you want to set container for full screen, you could override method in container UIView (that will allow to pass touches to views below container):
+
+```swift
+override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hitView = super.hitTest(point, with: event)
+        return hitView == self ? nil : hitView
+}
+```
+
+You can also use custom class `PassthroughView` provided in demo application. 
+
 ### Step 4. Handle errors
 
 `AudioburstPlayerError` enum is used to represent errors that occur in `AudioburstPlayer`. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:

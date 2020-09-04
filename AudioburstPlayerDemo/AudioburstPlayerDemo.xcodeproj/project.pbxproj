@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13B01F883B0AC1F49922535B /* Pods_AudioburstPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79277586E4E7B8FA9516BAA3 /* Pods_AudioburstPlayerDemo.framework */; };
+		44183A2725025959001D5FDC /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44183A2625025959001D5FDC /* PassthroughView.swift */; };
 		4427FA7F226496DA00CB3DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4427FA7D226496DA00CB3DE0 /* ViewController.swift */; };
 		4427FA81226496EA00CB3DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4427FA80226496EA00CB3DE0 /* Main.storyboard */; };
 		444AEC82228422760023B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444AEC7F228422760023B2BA /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		32A25427E67F7CB19F9784EF /* Pods-AudioburstPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioburstPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-AudioburstPlayerDemo/Pods-AudioburstPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		44183A2625025959001D5FDC /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		4427FA7D226496DA00CB3DE0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4427FA80226496EA00CB3DE0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		444AEC7E228422760023B2BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				449C9DFD24DD7E92009F64BE /* Extensions */,
 				444AEC83228422A80023B2BA /* AppDelegate.swift */,
 				4427FA7D226496DA00CB3DE0 /* ViewController.swift */,
+				44183A2625025959001D5FDC /* PassthroughView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 			buildConfigurationList = 44E0DD2422553C7400BE3351 /* Build configuration list for PBXNativeTarget "AudioburstPlayerDemo" */;
 			buildPhases = (
 				B989DEC6D5BD0F7E51680F21 /* [CP] Check Pods Manifest.lock */,
-				533A15E7C4564E851B22CF48 /* [CP] Prepare Artifacts */,
 				44E0DD0E22553C7100BE3351 /* Sources */,
 				44E0DD0F22553C7100BE3351 /* Frameworks */,
 				449C9DF224DADC94009F64BE /* ShellScript */,
@@ -230,23 +232,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n## Generate the build number using current date and time\nbuildNumber=$(date \"+%Y%m.%d.%H%M\")\n## Set the build number in plist file\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"\n";
 		};
-		533A15E7C4564E851B22CF48 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AudioburstPlayerDemo/Pods-AudioburstPlayerDemo-artifacts-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AudioburstPlayerDemo/Pods-AudioburstPlayerDemo-artifacts-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioburstPlayerDemo/Pods-AudioburstPlayerDemo-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B989DEC6D5BD0F7E51680F21 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +263,7 @@
 			files = (
 				449C9DFF24DD7E93009F64BE /* UIView+IBInspectable.swift in Sources */,
 				444AEC84228422A80023B2BA /* AppDelegate.swift in Sources */,
+				44183A2725025959001D5FDC /* PassthroughView.swift in Sources */,
 				4427FA7F226496DA00CB3DE0 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
