@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AudioburstPlayer'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = 'Official player from Audioburst'
 
   s.homepage         = 'https://github.com/audioburst-labs/AudioburstPlayer-iOS'
@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.dependency 'Cache', '~> 5.2.0'
   s.dependency 'lottie-ios', '~> 3.1.5'
   s.dependency 'SDWebImage', '5.4.0'
-  s.dependency 'OwlKit'
+  s.dependency 'OwlKit', '1.1.1'
 end
