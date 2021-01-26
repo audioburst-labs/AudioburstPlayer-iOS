@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AudioburstPlayer
 import AVFoundation
 import Alamofire
@@ -21,13 +21,66 @@ import UIKit.UIFont
 import UIKit.UIImage
 import UIKit
 import UserNotifications
+public struct UserExperience {
+  public enum PlayerAction : Swift.String, Swift.CaseIterable, Swift.Codable {
+    case channel
+    case userGenerated
+    case source
+    case account
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerAction]
+    public static var allCases: [AudioburstPlayer.UserExperience.PlayerAction] {
+      get
+    }
+  }
+  public struct PlayerSettings : Swift.Codable {
+    public var mode: AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode?
+    public var accentColor: Swift.String?
+    public var theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme?
+    public var autoplay: Swift.Bool?
+    public enum PlayerMode : Swift.String, Swift.Codable, Swift.CaseIterable {
+      case button
+      case banner
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+      public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode]
+      public static var allCases: [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode] {
+        get
+      }
+    }
+    public enum PlayerTheme : Swift.String, Swift.Codable, Swift.CaseIterable {
+      case light
+      case dark
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+      public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme]
+      public static var allCases: [AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme] {
+        get
+      }
+    }
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
 extension UIColor {
   public class func dynamicColor(light: UIKit.UIColor, dark: UIKit.UIColor) -> UIKit.UIColor
 }
 public class ABPlayer {
   public init(appKey: Swift.String, experienceId: Swift.String)
+  public init(configuration: AudioburstPlayer.ABPlayer.Configuration)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func openFullscreenPlayer()
+  public func play()
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
@@ -60,6 +113,7 @@ public enum AudioburstPlayerError : Foundation.LocalizedError {
   case wrongAppKey
   case wrongExperienceId
   case contentNotReady
+  case configurationError
   case other(Swift.Error)
   public var errorDescription: Swift.String? {
     get
@@ -67,6 +121,17 @@ public enum AudioburstPlayerError : Foundation.LocalizedError {
 }
 extension AudioburstPlayerError {
   public static func error(for error: Swift.Error) -> AudioburstPlayer.AudioburstPlayerError
+}
+extension ABPlayer {
+  public struct Configuration : Swift.Codable {
+    public let appKey: Swift.String
+    public let playerAction: AudioburstPlayer.UserExperience.PlayerAction
+    public let playerActionValue: Swift.String
+    public let playerSettings: AudioburstPlayer.UserExperience.PlayerSettings
+    public init(appKey: Swift.String, playerAction: AudioburstPlayer.UserExperience.PlayerAction, playerActionValue: Swift.String, mode: AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode? = nil, theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme? = nil, accentColor: Swift.String? = nil, autoPlay: Swift.Bool? = nil)
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
 }
 extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -76,3 +141,12 @@ extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
 public protocol AudioburstPlayerListener {
   func onClose()
 }
+extension AudioburstPlayer.UserExperience.PlayerAction : Swift.Equatable {}
+extension AudioburstPlayer.UserExperience.PlayerAction : Swift.Hashable {}
+extension AudioburstPlayer.UserExperience.PlayerAction : Swift.RawRepresentable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.Equatable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.Hashable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.RawRepresentable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.Equatable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.Hashable {}
+extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.RawRepresentable {}

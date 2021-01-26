@@ -33,7 +33,7 @@ This guide is a quick walkthrough to add AudioburstPlayer to an iOS app. [Audiob
 ## Prerequisites
 
 ### Audioburst API key
-The application requires an application key and experience ID, both of which can be obtained via [Audioburst Publishers](https://publishers.audioburst.com/). The experience ID is a unique identifier for the customized playlist topics chosen during the setup process in Audioburst Publishers.
+The library requires an application key which can be obtained via [Audioburst Publishers](https://publishers.audioburst.com/). An experience ID is also available. This is a unique identifier for the customized playlist topics chosen during the setup process.
 
 ## Add AudioburstPlayer to your app
 
@@ -45,23 +45,52 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-    pod 'AudioburstPlayer', '~> 0.1.3'
+    pod 'AudioburstPlayer', '~> 0.1.14'
 end
 ```
 
 ### Step 2. Init AudioburstPlayer
 
-A valid application key and experience ID are required to initialize AudioburstPlayer.
+AudioburstPlayer requires an application key to work. The player can be configured in two ways: via [Audioburst Publishers](https://publishers.audioburst.com/) after obtaining an experience ID or by passing a custom configuration.
 
 ```swift
 import AudioburstPlayer
 ```
 
+##### Initialize AudioburstPlayer with application key and experience ID:
+
 ```swift
 let player = ABPlayer(appKey: "YOUR_APP_KEY", experienceId: "YOUR_EXPERIENCE_ID")
 ```
 
+##### Initialize AudioburstPlayer with application key and custom configuration:
+
+```swift
+let configuration = ABPlayer.Configuration(appKey: "YOUR_APP_KEY",
+                                           playerAction: ...,
+                                           playerActionValue: ...,
+                                           mode: ...,
+                                           theme: ...,
+                                           accentColor: ...,
+                                           autoPlay: ...)
+```
+
+```swift
+let player = ABPlayer(configuration: configuration)
+```
+
+Parameters description:
+
+- applicationKey - String - application key obtained from [Audioburst Publishers](https://publishers.audioburst.com/),
+- action - Action enum - one of the types of playlists currently supported by the library,
+- actionValue - String - id of playlist that you would like to play,
+- mode - Mode enum - mode in which you would like player to appear (Button or Banner),
+- theme - Theme enum - theme of the players (Dark or Light),
+- accentColor - String - color of accents in players. It needs to be a hex value that starts with `#` character,
+- autoPlay - Boolean - whether player should start automatically playing after loading playlist or not.
+
 ### Step 3. Loading Audioburst content
+
 You simply need to call one method to load Audioburst content and get compact player view controller. Depending on mode set in Audioburst Studio, you will get floating player or mini player view controller Recommended view container size is: height `100 points`, width: `full screen width` )
 
 ```swift
@@ -85,7 +114,17 @@ override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
 
 You can also use custom class `PassthroughView` provided in demo application. 
 
-### Step 4. Handle errors
+### Step 4. Play content on demand
+
+You can request AudioburstPlayer to start playback at any time you want with simple `play()` method:
+
+```swift
+player.play()
+```
+
+In case no playlist is loaded yet this method call will cause library to remember this request and playback will start automatically after loading process is finished.
+
+### Step 5. Handle errors
 
 `AudioburstPlayerError` enum is used to represent errors that occur in `AudioburstPlayer`. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:
 
@@ -108,7 +147,7 @@ Don’t forget to unregister listener:
 player.remove(errorListener: self)
 ```
 
-### Step 5. Handle player events
+### Step 6. Handle player events
 To handle player events make your class implement `AudioburstPlayerListener` protocol, for example:
 
 ```swift
