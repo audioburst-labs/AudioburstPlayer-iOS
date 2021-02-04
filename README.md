@@ -91,7 +91,7 @@ Parameters description:
 
 ### Step 3. Loading Audioburst content
 
-You simply need to call one method to load Audioburst content and get compact player view controller. Depending on mode set in Audioburst Studio, you will get floating player or mini player view controller Recommended view container size is: height `100 points`, width: `full screen width` )
+Call a method to load Audioburst content in order to get the compact player view controller. Depending on the mode set in Audioburst Studio, you will get the floating player or mini player view controller. The recommended view container size is: height `100 points`, width: `full screen width` )
 
 ```swift
 player.load() { [weak self] result in
@@ -101,9 +101,9 @@ player.load() { [weak self] result in
 }
 ```
 
-After loading content you can use ` player.openFullscreenPlayer()` to open fullscreen player programmatically. If content is not loaded, calling this method will throw error `AudioburstPlayerError.contentNotReady` in error listener (`AudioburstPlayerErrorListener.onError()`) 
+After loading content use ` player.openFullscreenPlayer()` to open fullscreen player programmatically. If content is not loaded, calling this method will throw error `AudioburstPlayerError.contentNotReady` in error listener (`AudioburstPlayerErrorListener.onError()`) 
 
-If you want to set container for full screen, you could override method in container UIView (that will allow to pass touches to views below container):
+To set container to full screen override method in container UIView (this will allow touches to views below container to pass):
 
 ```swift
 override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
@@ -112,17 +112,17 @@ override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
 }
 ```
 
-You can also use custom class `PassthroughView` provided in demo application. 
+You can also use custom class `PassthroughView` provided in the demo application. 
 
 ### Step 4. Play content on demand
 
-You can request AudioburstPlayer to start playback at any time you want with simple `play()` method:
+Request the AudioburstPlayer to start playback at any time using simple `play()` method:
 
 ```swift
 player.play()
 ```
 
-In case no playlist is loaded yet this method call will cause library to remember this request and playback will start automatically after loading process is finished.
+If a playlist has not yet loaded this method call will cause the library to remember the request and playback will automatically start after the loading process is completed.
 
 ### Step 5. Handle errors
 
