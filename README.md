@@ -91,7 +91,7 @@ Parameters description:
 
 ### Step 3. Loading Audioburst content
 
-Call a method to load Audioburst content in order to get the compact player view controller. Depending on the mode set in Audioburst Studio, you will get the floating player or mini player view controller. The recommended view container size is: height `100 points`, width: `full screen width` )
+Call a method to load Audioburst content in order to get the compact player view controller. Depending on the mode set in Audioburst Publishers, you will get the floating player or mini player view controller. The recommended view container size is: height `100 points`, width: `full screen width` )
 
 ```swift
 player.load() { [weak self] result in
@@ -116,7 +116,7 @@ You can also use custom class `PassthroughView` provided in the demo application
 
 ### Step 4. Play content on demand
 
-Request the AudioburstPlayer to start playback at any time using simple `play()` method:
+Request the AudioburstPlayer to start playback at any time using this simple `play()` method:
 
 ```swift
 player.play()
