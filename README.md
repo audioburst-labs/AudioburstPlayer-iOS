@@ -45,7 +45,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-    pod 'AudioburstPlayer', '~> 0.1.14'
+    pod 'AudioburstPlayer', '~> 0.2.0'
 end
 ```
 
@@ -68,7 +68,6 @@ let player = ABPlayer(appKey: "YOUR_APP_KEY", experienceId: "YOUR_EXPERIENCE_ID"
 ```swift
 let configuration = ABPlayer.Configuration(appKey: "YOUR_APP_KEY",
                                            playerAction: ...,
-                                           playerActionValue: ...,
                                            mode: ...,
                                            theme: ...,
                                            accentColor: ...,
@@ -81,13 +80,23 @@ let player = ABPlayer(configuration: configuration)
 
 Parameters description:
 
-- applicationKey - String - application key obtained from [Audioburst Publishers](https://publishers.audioburst.com/),
-- action - Action enum - one of the types of playlists currently supported by the library,
-- actionValue - String - id of playlist that you would like to play,
-- mode - Mode enum - mode in which you would like player to appear (Button or Banner),
-- theme - Theme enum - theme of the players (Dark or Light),
+- appKey - String - application key obtained from [Audioburst Publishers](https://publishers.audioburst.com/),
+- playerAction - `PlayerAction` enum - one of the types of playlists currently supported by the library,
+- mode - `PlayerMode` enum - mode in which you would like player to appear (`button` or `banner`),
+- theme - `PlayerTheme` enum - theme of the players (`dark` or `light`),
 - accentColor - String - color of accents in players. It needs to be a hex value that starts with `#` character,
 - autoPlay - Boolean - whether player should start automatically playing after loading playlist or not.
+
+Possible `playerAction` values:
+
+- channel(category: String)
+- userGenerated(id: String)
+- sopurce(id: String)
+- account(id: String)
+- voice(data: Data?)
+
+Most of the options above accepts String as a parameter (`category` or `id`).
+`voice` playlist is a special type that accepts byte array from PCM file that should contain a voice saying what user would like to listen about.
 
 ### Step 3. Loading Audioburst content
 
@@ -123,6 +132,22 @@ player.play()
 ```
 
 If a playlist has not yet loaded this method call will cause the library to remember the request and playback will automatically start after the loading process is completed.
+
+### Step 5. Pass recorded PCM file
+
+AudioburstPlayer is able to process raw audio files that contain a recorded request of what should be played. You can record a voice command stating what you would like to listen to and then upload it to your device and use AudioburstPlayer to play it.
+
+```swift
+func load(voiceData: Data, completion: @escaping (_ result: Result<UIViewController, AudioburstPlayerError>) -> Void)
+```
+
+```swift
+ player?.load(voiceData: data) { result in
+ 		//actions after loading voice data playlist
+ }
+```
+
+The `load` function accepts `Data` as an argument. A request included in the PCM file will be processed and the player will load a playlist of the bursts found. If no bursts are found, `AudioburstPlayerErrorListener` will be called. If player view controller was already created playlist is loaded to current player view controller (and current instance is returned in completion). If player view controller was not created, new instance of view controller with loaded playlist is created and returned in completion. Please remember that before playing any PCM file the SDK must be initialized.
 
 ### Step 5. Handle errors
 
