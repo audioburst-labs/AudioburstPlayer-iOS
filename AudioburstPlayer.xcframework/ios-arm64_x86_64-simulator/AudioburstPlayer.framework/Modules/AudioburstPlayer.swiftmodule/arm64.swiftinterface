@@ -36,6 +36,9 @@ public struct UserExperience {
     public var accentColor: Swift.String?
     public var theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme?
     public var autoplay: Swift.Bool?
+    public var systemTheme: UIKit.UIUserInterfaceStyle? {
+      get
+    }
     public enum PlayerMode : Swift.String, Swift.Codable, Swift.CaseIterable {
       case button
       case banner
@@ -73,6 +76,8 @@ public class ABPlayer {
   public init(appKey: Swift.String, experienceId: Swift.String)
   public init(configuration: AudioburstPlayer.ABPlayer.Configuration)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
+  public func initialize(completion: ((Swift.Result<Swift.Void, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)?)
+  public func showPlayer() -> UIKit.UIViewController?
   public func load(voiceData: Foundation.Data, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func openFullscreenPlayer()
   public func play()
@@ -127,6 +132,14 @@ extension ABPlayer {
     public func encode(to encoder: Swift.Encoder) throws
   }
 }
+extension ABPlayer {
+  public struct PlaylistsViewConfiguration {
+    public let showToolbar: Swift.Bool
+    public let toolbarTitle: Swift.String?
+    public let optOutSectionsIds: [Swift.Int]
+    public init(showToolbar: Swift.Bool, toolbarTitle: Swift.String?, optOutSectionsIds: [Swift.Int])
+  }
+}
 extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
@@ -134,6 +147,7 @@ extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
 }
 public protocol AudioburstPlayerListener {
   func onClose()
+  func onPlaylistsClose()
 }
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.Equatable {}
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.Hashable {}

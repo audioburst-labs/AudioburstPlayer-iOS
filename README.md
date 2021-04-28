@@ -45,7 +45,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-    pod 'AudioburstPlayer', '~> 0.2.0'
+    pod 'AudioburstPlayer', '~> 0.2.3'
 end
 ```
 
