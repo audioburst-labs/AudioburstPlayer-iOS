@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AudioburstPlayer
 import AVFoundation
 import Alamofire
@@ -42,31 +42,31 @@ public struct UserExperience {
     public enum PlayerMode : Swift.String, Swift.Codable, Swift.CaseIterable {
       case button
       case banner
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
-      public var rawValue: Swift.String {
+      public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode]
+      public typealias RawValue = Swift.String
+      public static var allCases: [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode] {
         get
       }
-      public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode]
-      public static var allCases: [AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode] {
+      public var rawValue: Swift.String {
         get
       }
     }
     public enum PlayerTheme : Swift.String, Swift.Codable, Swift.CaseIterable {
       case light
       case dark
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
-      public var rawValue: Swift.String {
-        get
-      }
       public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme]
+      public typealias RawValue = Swift.String
       public static var allCases: [AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme] {
         get
       }
+      public var rawValue: Swift.String {
+        get
+      }
     }
-    public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
 }
 extension UIColor {
@@ -85,6 +85,9 @@ public class ABPlayer {
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
   public func remove(playerListener: AudioburstPlayer.AudioburstPlayerListener)
+  public func set(playerState: AudioburstPlayer.CompactPlayerState)
+  public func getPlayerStatus() -> AudioburstPlayer.CompactPlayerStatus?
+  public func set(position: CoreGraphics.CGPoint)
   @objc deinit
 }
 public protocol AudioburstPlayerErrorListener {
@@ -97,6 +100,21 @@ public protocol AudioburstPlayerErrorListener {
   @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   open func onInit()
   @objc deinit
+}
+public enum CompactPlayerState {
+  case floating
+  case expanded
+  case sticky
+  public static func == (a: AudioburstPlayer.CompactPlayerState, b: AudioburstPlayer.CompactPlayerState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CompactPlayerStatus {
+  public let position: CoreGraphics.CGPoint
+  public let state: AudioburstPlayer.CompactPlayerState
+  public let lastActivation: Foundation.Date?
 }
 extension CLAuthorizationStatus : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -128,8 +146,8 @@ extension ABPlayer {
     public let playerAction: AudioburstPlayer.UserExperience.PlayerAction
     public let playerSettings: AudioburstPlayer.UserExperience.PlayerSettings
     public init(appKey: Swift.String, playerAction: AudioburstPlayer.UserExperience.PlayerAction, mode: AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode? = nil, theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme? = nil, accentColor: Swift.String? = nil, autoPlay: Swift.Bool? = nil)
-    public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
 }
 extension ABPlayer {
@@ -155,3 +173,5 @@ extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode : Swift.RawR
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.Equatable {}
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.Hashable {}
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.RawRepresentable {}
+extension AudioburstPlayer.CompactPlayerState : Swift.Equatable {}
+extension AudioburstPlayer.CompactPlayerState : Swift.Hashable {}

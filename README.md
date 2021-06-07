@@ -149,7 +149,51 @@ func load(voiceData: Data, completion: @escaping (_ result: Result<UIViewControl
 
 The `load` function accepts `Data` as an argument. A request included in the PCM file will be processed and the player will load a playlist of the bursts found. If no bursts are found, `AudioburstPlayerErrorListener` will be called. If player view controller was already created playlist is loaded to current player view controller (and current instance is returned in completion). If player view controller was not created, new instance of view controller with loaded playlist is created and returned in completion. Please remember that before playing any PCM file the SDK must be initialized.
 
-### Step 5. Handle errors
+### Step 6. Programatically control Floating (Button) player
+
+When you choose to use Floating (Button) Player you can better control its position and state with the set of the functions described below.
+
+#### `func set(position: CGPoint)`
+
+This function accepts CGPoint with x and y coordinates. It will let you move floating player around and place it wherever you want. If you call this function before  player view controller is loaded  you will make library remember the position and it will show it at requested position as soon as player view controller is added to view hierarchy.
+
+```swift
+player.set(position:  CGPoint(x: 100, y: 200))
+```
+
+#### `func set(playerState: CompactPlayerState)`
+
+Floating player can be displayed in one of the following states:
+
+- `Floating` - the default state. When it is being shown as a small circle.
+- `Expanded` - the state where additional information and playback control buttons are displayed.
+- `Sticky` - minimized player that is attached to one of the side edges. It is possible to transit between following states:
+- From `Floating` to `Expanded` - it will animate a player expand.
+- From `Expanded` to `Floating` - it will animate a player collapse.
+- From `Floating` to `Sticky` - it will find the closest edge and attach to it.
+- From `Sticky` to `Floating` - it will detach from to edge.
+
+You can control the appearance by using this function:
+
+```swift
+player.set(playerState: .sticky)
+```
+
+If you call this function before  player is loaded / added to view hierarchy you will make library remember the requested state and it will show in it as soon as player view controller is added to view hierarchy.
+
+#### `func getPlayerStatus() -> CompactPlayerStatus?`
+
+This function will let you know what is the `CompactPlayerStatus`: 
+
+`position: CGPoint` current coordinates of the floating player
+
+`state: CompactPlayerState` current state of the floating player
+
+`lastActivation: Date?`  last time when floating player has been used by the user. It can be null if there was no action performed on the player yet. 
+
+This function can return null when floating player is not shown yet.
+
+### Step 7. Handle errors
 
 `AudioburstPlayerError` enum is used to represent errors that occur in `AudioburstPlayer`. To handle errors make your class implement `AudioburstPlayerErrorListener` protocol, for example:
 
@@ -172,7 +216,7 @@ Don’t forget to unregister listener:
 player.remove(errorListener: self)
 ```
 
-### Step 6. Handle player events
+### Step 8. Handle player events
 To handle player events make your class implement `AudioburstPlayerListener` protocol, for example:
 
 ```swift
