@@ -111,6 +111,10 @@ extension MainViewController: AudioburstPlayerErrorListener {
 }
 
 extension MainViewController: AudioburstPlayerListener {
+    func onPlaylistsClose() {
+        //empty
+    }
+
     func onClose() {
         removeViewControllerAsChild(compactPlayerVC)
     }
