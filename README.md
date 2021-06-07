@@ -49,6 +49,19 @@ target 'MyApp' do
 end
 ```
 
+To avoid build errors and warnings using cocoapods 1.10.x+ please add also `post_install` action: 
+
+```ruby
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+   target.build_configurations.each do |config|
+    config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
+    config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+   end
+  end
+ end
+```
+
 ### Step 2. Init AudioburstPlayer
 
 AudioburstPlayer requires an application key to work. The player can be configured in two ways: via [Audioburst Publishers](https://publishers.audioburst.com/) after obtaining an experience ID or by passing a custom configuration.
