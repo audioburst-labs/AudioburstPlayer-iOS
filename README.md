@@ -136,7 +136,7 @@ override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
 
 You can also use custom class `PassthroughView` provided in the demo application. 
 
-### Step 4. Play content on demand
+### Step 4. Play / pause content on demand
 
 Request the AudioburstPlayer to start playback at any time using this simple `play()` method:
 
@@ -145,6 +145,12 @@ player.play()
 ```
 
 If a playlist has not yet loaded this method call will cause the library to remember the request and playback will automatically start after the loading process is completed.
+
+You can also pause playback using `pause()` method: 
+
+```swift
+player.pause()
+```
 
 ### Step 5. Pass recorded PCM file
 
@@ -251,8 +257,18 @@ Don’t forget to unregister player listener:
 player.remove(playerListener: self)
 ```
 
+## Additional configuration
+
+### Filter out listened bursts
+
+By default, player will filter-out all bursts that user already listened to. Use `shouldFilterListenedBursts` property to change this behaviour or get current setting:
+
+```
+player.shouldFilterListenedBursts = false
+```
 
 ## Dependencies
+
 Libraries used by AudioburstPlayer (installed as pods dependencies)
 
 - `Alamofire`

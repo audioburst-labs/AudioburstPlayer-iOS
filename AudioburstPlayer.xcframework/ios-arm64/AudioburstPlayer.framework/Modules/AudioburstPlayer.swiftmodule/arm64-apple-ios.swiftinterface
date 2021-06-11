@@ -73,6 +73,10 @@ extension UIColor {
   public class func dynamicColor(light: UIKit.UIColor, dark: UIKit.UIColor) -> UIKit.UIColor
 }
 public class ABPlayer {
+  public var shouldFilterListenedBursts: Swift.Bool {
+    get
+    set
+  }
   public init(appKey: Swift.String, experienceId: Swift.String)
   public init(configuration: AudioburstPlayer.ABPlayer.Configuration)
   public func load(completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
@@ -81,6 +85,7 @@ public class ABPlayer {
   public func load(voiceData: Foundation.Data, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func openFullscreenPlayer()
   public func play()
+  public func pause()
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
