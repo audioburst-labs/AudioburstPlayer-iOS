@@ -36,6 +36,7 @@ public struct UserExperience {
     public var accentColor: Swift.String?
     public var theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme?
     public var autoplay: Swift.Bool?
+    public var shuffle: Swift.Bool?
     public var systemTheme: UIKit.UIUserInterfaceStyle? {
       get
     }
