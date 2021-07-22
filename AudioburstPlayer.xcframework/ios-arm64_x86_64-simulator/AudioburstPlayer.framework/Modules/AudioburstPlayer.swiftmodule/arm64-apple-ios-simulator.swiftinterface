@@ -21,6 +21,8 @@ import UIKit.UIFont
 import UIKit.UIImage
 import UIKit
 import UserNotifications
+import os.log
+import os
 public struct UserExperience {
   public enum PlayerAction : Swift.Codable {
     public func encode(to encoder: Swift.Encoder) throws
@@ -37,9 +39,6 @@ public struct UserExperience {
     public var theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme?
     public var autoplay: Swift.Bool?
     public var shuffle: Swift.Bool?
-    public var systemTheme: UIKit.UIUserInterfaceStyle? {
-      get
-    }
     public enum PlayerMode : Swift.String, Swift.Codable, Swift.CaseIterable {
       case button
       case banner
@@ -56,6 +55,9 @@ public struct UserExperience {
     public enum PlayerTheme : Swift.String, Swift.Codable, Swift.CaseIterable {
       case light
       case dark
+      public var systemTheme: UIKit.UIUserInterfaceStyle? {
+        get
+      }
       public init?(rawValue: Swift.String)
       public typealias AllCases = [AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme]
       public typealias RawValue = Swift.String
@@ -85,6 +87,7 @@ public class ABPlayer {
   public func showPlayer() -> UIKit.UIViewController?
   public func load(voiceData: Foundation.Data, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func openFullscreenPlayer()
+  public func showPlaylistsView(configuration: AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void) -> UIKit.UINavigationController?
   public func play()
   public func pause()
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
@@ -151,17 +154,29 @@ extension ABPlayer {
     public let appKey: Swift.String
     public let playerAction: AudioburstPlayer.UserExperience.PlayerAction
     public let playerSettings: AudioburstPlayer.UserExperience.PlayerSettings
-    public init(appKey: Swift.String, playerAction: AudioburstPlayer.UserExperience.PlayerAction, mode: AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode? = nil, theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme? = nil, accentColor: Swift.String? = nil, autoPlay: Swift.Bool? = nil)
+    public init(appKey: Swift.String, playerAction: AudioburstPlayer.UserExperience.PlayerAction, mode: AudioburstPlayer.UserExperience.PlayerSettings.PlayerMode? = .button, theme: AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme? = .dark, accentColor: Swift.String? = "#ff009e", autoPlay: Swift.Bool? = true)
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
 }
 extension ABPlayer {
   public struct PlaylistsViewConfiguration {
+    public static let defaultTitle: Swift.String
+    public enum SectionLayout : Swift.String {
+      case horizontal
+      case grid
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
     public let showToolbar: Swift.Bool
-    public let toolbarTitle: Swift.String?
-    public let optOutSectionsIds: [Swift.Int]
-    public init(showToolbar: Swift.Bool, toolbarTitle: Swift.String?, optOutSectionsIds: [Swift.Int])
+    public let toolbarTitle: Swift.String
+    public let showMyPlaylists: Swift.Bool
+    public let sectionLayout: AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration.SectionLayout
+    public let closeOnPlaylistLoad: Swift.Bool
+    public init(showToolbar: Swift.Bool = true, toolbarTitle: Swift.String = defaultTitle, showMyPlaylists: Swift.Bool = true, sectionLayout: AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration.SectionLayout = .horizontal, closeOnPlaylistLoad: Swift.Bool = true)
   }
 }
 extension UIGestureRecognizer.State : Swift.CustomStringConvertible {
@@ -181,3 +196,6 @@ extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.Has
 extension AudioburstPlayer.UserExperience.PlayerSettings.PlayerTheme : Swift.RawRepresentable {}
 extension AudioburstPlayer.CompactPlayerState : Swift.Equatable {}
 extension AudioburstPlayer.CompactPlayerState : Swift.Hashable {}
+extension AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration.SectionLayout : Swift.Equatable {}
+extension AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration.SectionLayout : Swift.Hashable {}
+extension AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration.SectionLayout : Swift.RawRepresentable {}

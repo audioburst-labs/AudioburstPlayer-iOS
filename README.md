@@ -257,6 +257,53 @@ Don’t forget to unregister player listener:
 player.remove(playerListener: self)
 ```
 
+
+
+## Show Playlist view
+
+Using AudioburstPlayer you can also give your user a possibility to choose what playlist one would like to listen to. To do that use following method:
+
+```swift
+let playlistsVC = player.showPlaylistsView(configuration: configuration, completion: { result in
+		switch result {
+      case .success(let playerVC):
+      		//handle adding player view controller to the app 
+      case .failure(let error):
+      		//handle error here 
+    }
+})
+```
+
+Method `showPlaylistsView()` returning playlists view controller to show in the host app, after loading selected playlists, completion block is executed. With success result, player view controller is provided (new instance if player view was not loaded previously, or current player's view instance).
+
+After using close button on toolbar, method `onPlaylistsClose()` from `AudioburstPlayerListener` is executed. 
+
+`PlaylistViewConfiguration` object gives you a possibility to customize playlists view in a following way:
+
+- showToolbar - Bool - whether to show Toolbar or not
+
+- toolbarTitle - String - text that should be displayed as a Toolbar title
+
+  <p align="middle">
+  <img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_my_playlists.png?raw=true"  width="180" hspace="10" title="Playlists with toolbar"/><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_notoolbar.png?raw=true"  width="180" hspace="5" />
+  </p>
+
+- showMyPlaylists - Bool - "My Playlists" section is a special section playlist types
+
+  <p align="middle">
+  <img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_my_playlists.png?raw=true"  width="180" hspace="10" title="Playlists with toolbar"/><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_no_my_playlists.png?raw=true"  width="180" hspace="5" />
+  </p>
+
+- sectionLayout - SectionLayout enum - you can choose whether playlist tiles should be displayed as a grid or horizontal carousel
+
+  <p align="middle">
+  <img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_grid.png?raw=true"  width="180" hspace="10" title="Playlists with toolbar"/><img src="https://raw.githubusercontent.com/audioburst-labs/AudioburstPlayer-iOS/master/screenshots/playlists_horizontal.png?raw=true"  width="180" hspace="5" />
+  </p>
+
+- closeOnPlaylistLoad - Bool - flag that controls if method `onPlaylistsClose()` from `AudioburstPlayerListener`  should be called after any playlist has been chosen.
+
+
+
 ## Additional configuration
 
 ### Filter out listened bursts
