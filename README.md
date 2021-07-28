@@ -104,7 +104,7 @@ Possible `playerAction` values:
 
 - channel(category: String)
 - userGenerated(id: String)
-- sopurce(id: String)
+- source(id: String)
 - account(id: String)
 - voice(data: Data?)
 
@@ -113,7 +113,7 @@ Most of the options above accepts String as a parameter (`category` or `id`).
 
 ### Step 3. Loading Audioburst content
 
-Call a method to load Audioburst content in order to get the compact player view controller. Depending on the mode set in Audioburst Publishers, you will get the floating player or mini player view controller. The recommended view container size is: height `100 points`, width: `full screen width` )
+Call a method to load Audioburst content in order to get the compact player view controller. Depending on the mode set in Audioburst Publishers, you will get the button player or banner player view controller. The recommended view container size is: height `100 points`, width: `full screen width` )
 
 ```swift
 player.load() { [weak self] result in
@@ -135,6 +135,35 @@ override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
 ```
 
 You can also use custom class `PassthroughView` provided in the demo application. 
+
+
+
+To load playlist and get compact player view you can also use `initialize()` and `showPlayer()` methods. 
+
+```swift
+player.initialize() { result in 
+  switch result {
+      case .success:
+           // handle successful initialization 
+      case .failure(let error):
+           // handle error 
+   }
+}
+```
+
+After successfull initialization you can get player view controller:
+
+```swift
+let playerVC = player.showPlayer()
+```
+
+`showPlayer()` returns new instance of player's view controller or already created view controller. 
+
+You can hide compact player (button or banner) using `hidePlayer()` method. 
+
+```swift
+player.hidePlayer()
+```
 
 ### Step 4. Play / pause content on demand
 

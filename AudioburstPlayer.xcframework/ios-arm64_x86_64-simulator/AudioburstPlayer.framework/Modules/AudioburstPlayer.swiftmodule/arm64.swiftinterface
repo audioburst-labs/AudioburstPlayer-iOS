@@ -75,6 +75,12 @@ public struct UserExperience {
 extension UIColor {
   public class func dynamicColor(light: UIKit.UIColor, dark: UIKit.UIColor) -> UIKit.UIColor
 }
+extension ABPlayer {
+  public func set(playerState: AudioburstPlayer.CompactPlayerState)
+  public func getPlayerStatus() -> AudioburstPlayer.CompactPlayerStatus?
+  public func set(position: CoreGraphics.CGPoint)
+  public func hidePlayer()
+}
 public class ABPlayer {
   public var shouldFilterListenedBursts: Swift.Bool {
     get
@@ -87,16 +93,13 @@ public class ABPlayer {
   public func showPlayer() -> UIKit.UIViewController?
   public func load(voiceData: Foundation.Data, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   public func openFullscreenPlayer()
-  public func showPlaylistsView(configuration: AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void) -> UIKit.UINavigationController?
+  public func showPlaylistsView(configuration: AudioburstPlayer.ABPlayer.PlaylistsViewConfiguration, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void) -> UIKit.UIViewController?
   public func play()
   public func pause()
   public func add(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
   public func remove(playerListener: AudioburstPlayer.AudioburstPlayerListener)
-  public func set(playerState: AudioburstPlayer.CompactPlayerState)
-  public func getPlayerStatus() -> AudioburstPlayer.CompactPlayerStatus?
-  public func set(position: CoreGraphics.CGPoint)
   @objc deinit
 }
 public protocol AudioburstPlayerErrorListener {
