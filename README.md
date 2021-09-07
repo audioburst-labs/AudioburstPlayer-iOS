@@ -331,6 +331,31 @@ After using close button on toolbar, method `onPlaylistsClose()` from `Audioburs
 
 - closeOnPlaylistLoad - Bool - flag that controls if method `onPlaylistsClose()` from `AudioburstPlayerListener`  should be called after any playlist has been chosen.
 
+## Get Playlist information
+
+Using AudioburstPlayer you can also request a particular playlist's information and render it for the user in your app. Pass information about what playlist you would like to get to `getPlaylist` function and wait for the result.
+
+```swift
+player.getPlaylist(action: .channel(category: "1")) { result in
+            //handle result here
+}
+```
+
+## Play Playlist
+
+Each `ABPlaylist` returned from `getPlaylist` function consist list of `ABBurst`s. You can let your user choose any of them and use its `id` to make this `ABBurst` appear on the beginning of the playlist
+
+```swift
+player.playPlaylist(action: .channel(category: "1"), burstId: "35hx7zwe3", completion: { result in
+      switch result {
+      case .success(let vc):
+          //handle showing player view controller 
+      case .failure(let error):
+          //handle error 
+      }
+})
+```
+
 
 
 ## Additional configuration

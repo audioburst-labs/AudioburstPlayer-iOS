@@ -100,6 +100,9 @@ public class ABPlayer {
   public func remove(errorListener: AudioburstPlayer.AudioburstPlayerErrorListener)
   public func add(playerListener: AudioburstPlayer.AudioburstPlayerListener)
   public func remove(playerListener: AudioburstPlayer.AudioburstPlayerListener)
+  public func showFullPlayerKeywords(shouldShow: Swift.Bool)
+  public func getPlaylist(action: AudioburstPlayer.UserExperience.PlayerAction, completion: @escaping (Swift.Result<AudioburstPlayer.ABPlayer.ABPlaylist, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
+  public func playPlaylist(action: AudioburstPlayer.UserExperience.PlayerAction, burstId: Swift.String? = nil, completion: @escaping (Swift.Result<UIKit.UIViewController, AudioburstPlayer.AudioburstPlayerError>) -> Swift.Void)
   @objc deinit
 }
 public protocol AudioburstPlayerErrorListener {
@@ -112,6 +115,41 @@ public protocol AudioburstPlayerErrorListener {
   @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   open func onInit()
   @objc deinit
+}
+extension ABPlayer {
+  public struct ABBurst : Swift.Codable {
+    public let id: Swift.String
+    public let title: Swift.String
+    public let creationDate: Swift.String
+    public let durationMilliseconds: Swift.UInt64
+    public let sourceName: Swift.String
+    public let category: Swift.String?
+    public let playlistId: Swift.UInt64
+    public let showName: Swift.String
+    public let streamUrl: Swift.String?
+    public let audioUrl: Swift.String
+    public let imageUrls: [Swift.String]
+    public let source: AudioburstPlayer.ABPlayer.ABBurst.Source
+    public let shareUrl: Swift.String
+    public let keywords: [Swift.String]
+    public let ctaData: AudioburstPlayer.ABPlayer.ABBurst.CtaData?
+    public struct Source : Swift.Codable {
+      public let sourceName: Swift.String
+      public let sourceType: Swift.String?
+      public let showName: Swift.String
+      public let durationFromStartMilliseconds: Swift.UInt64
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+    }
+    public struct CtaData : Swift.Codable {
+      public let buttonText: Swift.String
+      public let url: Swift.String
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
 }
 public enum CompactPlayerState {
   case floating
@@ -127,6 +165,14 @@ public struct CompactPlayerStatus {
   public let position: CoreGraphics.CGPoint
   public let state: AudioburstPlayer.CompactPlayerState
   public let lastActivation: Foundation.Date?
+}
+extension ABPlayer {
+  public struct ABPlaylist : Swift.Codable {
+    public let name: Swift.String
+    public let bursts: [AudioburstPlayer.ABPlayer.ABBurst]
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
 }
 extension CLAuthorizationStatus : Swift.CustomStringConvertible {
   public var description: Swift.String {
